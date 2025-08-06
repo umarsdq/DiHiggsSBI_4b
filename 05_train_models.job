@@ -1,0 +1,19 @@
+executable = 05_train_models.sh
+arguments = $(classifier) $(f) $(param)
+output = trainlogs/outputfile_$(param)_c$(classifier)_f$(f).$(CLUSTER).txt
+error = trainlogs/errorfile_$(param)_c$(classifier)_f$(f).$(CLUSTER).txt
+log = trainlogs/example.job_$(param)_c$(classifier)_f$(f).$(CLUSTER).txt
+request_gpus = 1
++MaxRuntime = 18*60*60
+
+queue classifier,f,param from (
+1,5,c0
+1,3,c0
+1,1,c0
+2,5,c0
+2,3,c0
+2,1,c0
+3,5,c0
+3,3,c0
+3,1,c0
+)

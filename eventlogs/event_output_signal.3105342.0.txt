@@ -1,0 +1,8 @@
+Using scratch directory: /srv/localstage/condor/dir_2610294
+Extracting MadGraph installation...
+MadGraph extracted to: /srv/localstage/condor/dir_2610294/mg5amcnlo
+Generated job ID: 1 (CLUSTER=3105342, PROCESS=0)
+Using Condor scratch directory: /srv/localstage/condor/dir_2610294
+Running signal generation (-sm) with random seed
+Modified run card with seed: 17717
+Job completed successfully

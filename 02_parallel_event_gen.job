@@ -1,0 +1,61 @@
+executable = 02_parallel_event_gen.sh
+request_cpus = 1
++MaxRunTime = 3*60*60
+output = eventlogs/event_output_$(arguments)$(bsm_id).$(CLUSTER).$(PROCESS).txt
+error = eventlogs/event_error_$(arguments)$(bsm_id).$(CLUSTER).$(PROCESS).txt
+log = eventlogs/event_log_$(arguments)$(bsm_id).$(CLUSTER).$(PROCESS).txt
+environment = "PROCESS=$(PROCESS) CLUSTER=$(CLUSTER)"
+
+# Transfer the MadGraph tar file to each job
+transfer_input_files = madgraph.tar.gz
+
+# Queue entries for different generation types
+# Signal generation (20 runs for 14 TeV)
+arguments = signal
+queue 40
+
+# Background generation (160 runs for 14 TeV)
+#arguments = background
+#queue 320
+
+# BSM generation for each bsm_id (1-9) with 10 runs each for 14 TeV (90 total runs)
+# arguments = bsm $(bsm_id) 1
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 2
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 3
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 4
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 5
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 6
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 7
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 8
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 9
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 10
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 11
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 12
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 13
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 14
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 15
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 16
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 17
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 18
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 19
+# queue bsm_id in 1,2,3,4,5,6,7,8,9
+# arguments = bsm $(bsm_id) 20
+# queue bsm_id in 1,2,3,4,5,6,7,8,9

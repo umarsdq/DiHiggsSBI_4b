@@ -1,0 +1,27 @@
+executable = 06_run_evaluate.sh
+arguments = $(script_type) $(parameter_code) $(number_features)
+output = evaluate_outputs/outputfile_$(script_type)_$(parameter_code)_f$(number_features).$(CLUSTER).txt
+error = evaluate_outputs/errorfile_$(script_type)_$(parameter_code)_f$(number_features).$(CLUSTER).txt
+log = evaluate_outputs/evaluate.job_$(script_type)_$(parameter_code)_f$(number_features).$(CLUSTER).txt
+request_memory = 8000
++MaxRuntime = 0.5*60*60
+queue script_type,parameter_code,number_features from (
+06b,c0,1
+06b,c0,3
+06b,c0,5
+06b,c1,1
+06b,c1,3
+06b,c1,5
+06b,c0c1,1
+06b,c0c1,3
+06b,c0c1,5
+06a,c0,1
+06a,c0,3
+06a,c0,5
+06a,c1,1
+06a,c1,3
+06a,c1,5
+06a,c0c1,1
+06a,c0c1,3
+06a,c0c1,5
+)

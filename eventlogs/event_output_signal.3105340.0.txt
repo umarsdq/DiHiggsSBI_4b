@@ -1,0 +1,7 @@
+Extracting MadGraph installation...
+MadGraph extracted to: /tmp/mg5amcnlo
+Generated job ID: 1 (CLUSTER=3105340, PROCESS=0)
+Using Condor temporary directory: /tmp
+Running signal generation (-sm) with random seed
+Modified run card with seed: 12909
+Job completed successfully
