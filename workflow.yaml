@@ -1,25 +1,25 @@
 # Data setup (step 1)
-data_dir: /vols/cms/us322/nsbi_for_dihiggs_4b/data
-morphing_setup: /vols/cms/us322/nsbi_for_dihiggs_4b/data/setup.h5
+data_dir: /vols/cms/us322/dihiggs_4b/data
+morphing_setup: /vols/cms/us322/dihiggs_4b/data/setup.h5
 
 # MG generation (step 2)
 madgraph:
     dir: /vols/cms/us322/mg5amcnlo # Stable v3.5.1
     test_run: True
     #output_dir: /vols/cms/us322/testing/mg_processes
-    output_dir: /vols/cms/us322/02_event_generation_14_4b/mg_processes
+    output_dir: /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes
     energy: 14 # 100 TeV (FC) or 14 TeV (HL-LHC)
 
 # Delphes (step 3)
 delphes:
-    input_dir_prefix: /vols/cms/us322/02b_final_events_14_new
-    output_file: /vols/cms/us322/03_post_delphes_data_14/delphes
-    long_term_storage_dir: /vols/cms/us322/03_post_delphes_data_14
+    input_dir_prefix: /vols/cms/us322/events_4b/02b_final_events_4b
+    output_file: /vols/cms/us322/events_4b/03_post_delphes_data_4b/delphes
+    long_term_storage_dir: /vols/cms/us322/events_4b/03_post_delphes_data_4b
     
 # Sampling (step 4)
 sampling:
-    input_dir: /vols/cms/us322/03_post_delphes_data_14
-    output_dir: /vols/cms/us322/04_new_dataset_dihiggs_14_25k
+    input_dir: /vols/cms/us322/events_4b/03_post_delphes_data_4b
+    output_dir: /vols/cms/us322/events_4b/04_new_dataset_dihiggs_4b
     
 # Plotti
 plotting:

@@ -1,0 +1,50 @@
+000 (3105405.001.000) 2025-08-06 19:20:59 Job submitted from host: <146.179.108.134:9618?addrs=146.179.108.134-9618&alias=htcmaster00.hep.ph.ic.ac.uk&noUDP&sock=schedd_935_e924>
+...
+001 (3105405.001.000) 2025-08-06 20:16:59 Job executing on host: <146.179.108.54:9618?addrs=146.179.108.54-9618+[2a0c-5bc0-88-111-92e2-baff-fe9b-845c]-9618&alias=lxa02.hep.ph.ic.ac.uk&noUDP&sock=startd_1806_5821>
+	SlotName: slot1_4@lxa02.hep.ph.ic.ac.uk
+	CondorScratchDir = "/srv/localstage/condor/dir_2798651"
+	Cpus = 1
+	Disk = 2049024
+	GPUs = 0
+	Memory = 4000
+...
+006 (3105405.001.000) 2025-08-06 20:17:12 Image size of job updated: 936
+	1  -  MemoryUsage of job (MB)
+	936  -  ResidentSetSize of job (KB)
+...
+006 (3105405.001.000) 2025-08-06 20:19:12 Image size of job updated: 371600
+	349  -  MemoryUsage of job (MB)
+	357216  -  ResidentSetSize of job (KB)
+...
+006 (3105405.001.000) 2025-08-06 20:21:12 Image size of job updated: 1078572
+	895  -  MemoryUsage of job (MB)
+	916272  -  ResidentSetSize of job (KB)
+...
+006 (3105405.001.000) 2025-08-06 20:23:12 Image size of job updated: 1095820
+	1071  -  MemoryUsage of job (MB)
+	1095820  -  ResidentSetSize of job (KB)
+...
+006 (3105405.001.000) 2025-08-06 20:25:13 Image size of job updated: 1095824
+	1071  -  MemoryUsage of job (MB)
+	1095820  -  ResidentSetSize of job (KB)
+...
+005 (3105405.001.000) 2025-08-06 21:22:40 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:02:26, Sys 0 00:00:56  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:02:26, Sys 0 00:00:56  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            : 275000     2048000   2049024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :   1071        4000      4000 
+	   TimeExecute (s)      :   3941                       
+	   TimeSlotBusy (s)     :   3942                       
+
+	Job terminated of its own accord at 2025-08-06T20:22:40Z with exit-code 0.
+...

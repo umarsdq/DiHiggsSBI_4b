@@ -1,0 +1,392 @@
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.5.1                 2023-07-11         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../mg5amcnlo/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+None does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/madminer/cards/mg_commands_0.dat
+The import format was not given, so we guess it as command
+launch /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.5.1                 2023-07-11         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Cards/me5_configuration.txt  
+INFO: load configuration from /vols/cms/us322/mg5amcnlo/input/mg5_configuration.txt  
+INFO: load configuration from /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+generate_events run_01
+The following switches determine which programs are run:
+/=================== Description ===================|============= values ==============|======== other options ========\
+| 1. Choose the shower/hadronization program        | [1m       shower[0m = [32mPythia8[0m           |     OFF                       |
+| 2. Choose the detector simulation program         | [1m     detector[0m = [01mNot Avail.[0m        |     Please install module     |
+| 3. Choose an analysis package (plot/convert)      | [1m     analysis[0m = [01mNot Avail.[0m        |     Please install module     |
+| 4. Decay onshell particles                        | [1m      madspin[0m = [32mON[0m                |     onshell|full|OFF          |
+| 5. Add weights to events for new hypp.            | [1m     reweight[0m = [32mON[0m                |     OFF                       |
+\=======================================================================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=OFF' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+[1;34mfound line : order=LO[0m
+[1;34mThis answer is not valid for current question. Keep it for next question and use here default: 0[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param         : [32mparam_card.dat[0m                         |
+|  [31m2[0m. run           : [32mrun_card.dat[0m                           |
+|  [31m3[0m. pythia8       : [32mpythia8_card.dat[0m                       |
+|  [31m4[0m. madspin       : [32mmadspin_card.dat[0m                       |
+|  [31m5[0m. reweight      : [32mreweight_card.dat[0m                      |
+|  [31m6[0m. MadLoopParams : [32mMadLoopParams.dat[0m                      |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, 3, pythia8, 4, enter path, ... ]
+[1;34mfound line : order=LO[0m
+[1;34mThis answer is not valid for current question. Keep it for next question and use here default: 0[0m
+INFO: Update the dependent parameter of the param_card.dat 
+[1;34mWARNING: update the strong coupling value (alpha_s) to the value from the pdf selected: 0.119 [0m
+[1;34mWARNING: Unknow type of information in the card: dim64f2l,dim64f,dim64f4l [0m
+Generating 10 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+initMadLoop -r -f
+Error: no DISPLAY environment variable specified
+Initializing MadLoop loop-induced matrix elements (this can take some time)...
+MadLoop initialization finished.
+compile Source Directory
+Using random number seed offset = 21
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P0_gg_hh  
+INFO:  Idle: 1,  Running: 7,  Completed: 0 [ current time: 18h45 ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 1 [  1.4s  ] 
+INFO: P0_gg_hh/G1 is at 0.0154 +- 0.000592 pb. Now submitting iteration #2. 
+INFO:  Idle: 0,  Running: 7,  Completed: 10 [  4.6s  ] 
+INFO: P0_gg_hh/G1 is at 0.01582 +- 0.000152 pb. Now submitting iteration #3. 
+INFO:  Idle: 0,  Running: 7,  Completed: 19 [  8.9s  ] 
+INFO: Survey finished for P0_gg_hh/G1 at 0.01582 +- 4.88e-05 pb 
+INFO:  Idle: 0,  Running: 0,  Completed: 27 [  9.2s  ] 
+INFO: End survey 
+refine 10
+Creating Jobs
+INFO: Refine results to 10 
+INFO: Generating 10.0 unweighted events. 
+sum of cpu time of last step: 0 second
+INFO: Effective Luminosity 695.3223767383059 pb^-1 
+INFO: need to improve 0 channels 
+- Current estimate of cross-section: 0.01582 +- 4.8761e-05
+INFO:  Idle: 0,  Running: 0,  Completed: 0 [ current time: 18h45 ] 
+INFO: Combining runs 
+sum of cpu time of last step: 0 second
+INFO: finish refine 
+refine 10 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+ 
+ 
+ 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cumulative sequential time for this run: 1m00s
+     Cross-section :   0.01582 +- 4.876e-05 pb
+     Nb of events :  10
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+INFO: Extracting the banner ... 
+INFO: process: p p > H H QED=2 QCD=2  
+INFO: options: NP=2  
+INFO: Running Reweighting 
+change output default
+change helicity False
+launch --rwgt_name=morphing_basis_vector_1
+INFO: detected model: SMEFTatNLO-LO. Loading... 
+INFO: generating the square matrix element for reweighting 
+INFO: generate p p > H H   QED=2 QCD=2 NP=2   --no_warning=duplicate;define pert_QCD = -5 -4 -3 -2 -1 1 2 3 4 5 21;add process p p > H H    pert_QCD QED=2 QCD=3 NP=2    --no_warning=duplicate; 
+INFO: RETRY with generate p p > H H   QED=2 QCD=2 NP=2  [virt=QCD] ; 
+INFO: Done 6.288 
+INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 -4.270762 # orig: 0.0
+KEEP:set param_card dim6 5 -9.635791 # orig: 0.0
+KEEP:set param_card dim62f 19 -5.011696 # orig: 0.0
+KEEP: 
+INFO: Event nb 0 current time: 18h45 
+INFO: All event done  (nb_event: 10)  0.095s  
+INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0203196 pb (indicative error: 0.00536328 pb) 
+launch --rwgt_name=morphing_basis_vector_2
+INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 -3.509851 # orig: 0.0
+KEEP:set param_card dim6 5 -14.88657 # orig: 0.0
+KEEP:set param_card dim62f 19 6.650933 # orig: 0.0
+KEEP: 
+INFO: Event nb 0 current time: 18h45 
+INFO: All event done  (nb_event: 10)  0.062s  
+INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0184552 pb (indicative error: 0.0107928 pb) 
+launch --rwgt_name=morphing_basis_vector_3
+INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 -4.70413 # orig: 0.0
+KEEP:set param_card dim6 5 -2.237588 # orig: 0.0
+KEEP:set param_card dim62f 19 4.219889 # orig: 0.0
+KEEP: 
+INFO: Event nb 0 current time: 18h45 
+INFO: All event done  (nb_event: 10)  0.063s  
+INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0346932 pb (indicative error: 0.00610129 pb) 
+launch --rwgt_name=morphing_basis_vector_4
+INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 0.1140347 # orig: 0.0
+KEEP:set param_card dim6 5 4.567852 # orig: 0.0
+KEEP:set param_card dim62f 19 5.437451 # orig: 0.0
+KEEP: 
+INFO: Event nb 0 current time: 18h45 
+INFO: All event done  (nb_event: 10)  0.064s  
+INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0930116 pb (indicative error: 0.00670523 pb) 
+launch --rwgt_name=morphing_basis_vector_5
+INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 2.704957 # orig: 0.0
+KEEP:set param_card dim6 5 -11.77089 # orig: 0.0
+KEEP:set param_card dim62f 19 -5.938309 # orig: 0.0
+KEEP: 
+INFO: Event nb 0 current time: 18h45 
+INFO: All event done  (nb_event: 10)  0.063s  
+INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0909483 pb (indicative error: 0.0157781 pb) 
+launch --rwgt_name=morphing_basis_vector_6
+INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 4.585811 # orig: 0.0
+KEEP:set param_card dim6 5 6.747472 # orig: 0.0
+KEEP:set param_card dim62f 19 -2.432281 # orig: 0.0
+KEEP: 
+INFO: Event nb 0 current time: 18h45 
+INFO: All event done  (nb_event: 10)  0.064s  
+INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0436261 pb (indicative error: 0.00703916 pb) 
+launch --rwgt_name=morphing_basis_vector_7
+INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 -1.246802 # orig: 0.0
+KEEP:set param_card dim6 5 -14.80999 # orig: 0.0
+KEEP:set param_card dim62f 19 0.4606651 # orig: 0.0
+KEEP: 
+INFO: Event nb 0 current time: 18h45 
+INFO: All event done  (nb_event: 10)  0.063s  
+INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0531657 pb (indicative error: 0.0192372 pb) 
+launch --rwgt_name=morphing_basis_vector_8
+INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 -1.757994 # orig: 0.0
+KEEP:set param_card dim6 5 7.687006 # orig: 0.0
+KEEP:set param_card dim62f 19 -4.792287 # orig: 0.0
+KEEP: 
+INFO: Event nb 0 current time: 18h45 
+INFO: All event done  (nb_event: 10)  0.064s  
+INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0732019 pb (indicative error: 0.0148745 pb) 
+launch --rwgt_name=morphing_basis_vector_9
+INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 3.774042 # orig: 0.0
+KEEP:set param_card dim6 5 0.6799669 # orig: 0.0
+KEEP:set param_card dim62f 19 4.975328 # orig: 0.0
+KEEP: 
+INFO: Event nb 0 current time: 18h45 
+INFO: All event done  (nb_event: 10)  0.063s  
+INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0259012 pb (indicative error: 0.00167643 pb) 
+INFO: Original cross-section: 0.01582 +- 4.8761e-05 pb (cross-section from sum of weights: 0.01582) 
+INFO: Computed cross-section: 
+INFO: morphing_basis_vector_1 : 0.020319586327489154 +- 0.005363282946961173 pb 
+INFO: morphing_basis_vector_2 : 0.018455221268813687 +- 0.0107927942890466 pb 
+INFO: morphing_basis_vector_3 : 0.03469323618495514 +- 0.006101290666082988 pb 
+INFO: morphing_basis_vector_4 : 0.09301162879597846 +- 0.006705225650987274 pb 
+INFO: morphing_basis_vector_5 : 0.09094828556109509 +- 0.015778055002138143 pb 
+INFO: morphing_basis_vector_6 : 0.04362612605525458 +- 0.007039155219718169 pb 
+INFO: morphing_basis_vector_7 : 0.053165734254442966 +- 0.019237247606857646 pb 
+INFO: morphing_basis_vector_8 : 0.07320192492255771 +- 0.01487450469828058 pb 
+INFO: morphing_basis_vector_9 : 0.025901168002734544 +- 0.0016764325512041202 pb 
+INFO: quit rwgt 
+decay_events -from_cards
+INFO: Running MadSpin 
+INFO: This functionality allows for the decay of resonances 
+INFO: in a .lhe file, keeping track of the spin correlation effets. 
+INFO: BE AWARE OF THE CURRENT LIMITATIONS: 
+INFO:   (1) Only a succession of 2 body decay are currently allowed 
+************************************************************
+*                                                          *
+*           W E L C O M E  to  M A D S P I N               *
+*                                                          *
+************************************************************
+INFO: Extracting the banner ... 
+INFO: process: p p > H H QED=2 QCD=2  
+INFO: options: NP=2  
+INFO: detected model: SMEFTatNLO-LO. Loading... 
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Set group_subprocesses to Auto
+Note that you need to regenerate all processes
+import model heft --bypass_check
+[1;34mWARNING: No param_card defined for the new model. We will use the default one but this might completely wrong. [0m
+INFO: detected model: heft. Loading... 
+INFO: Restrict model heft with file ../mg5amcnlo/models/heft/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+[1;34mPass the definition of 'j' and 'p' to 4 flavour scheme.[0m
+Kept definitions of multiparticles l+ / l- / vl / vl~ unchanged
+Removed obsolete multiparticles all
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- m- ve~ vm~ vt~ e+ m+ t b t~ b~ z w+ h h1 w- tt- tt+
+set spinmode None          # Use one of the madspin special mode
+set max_weight_ps_point 400  # number of PS to estimate the maximum for each event
+decay h > b b~
+decay h > b b~
+launch
+INFO: Will use seed 465284274 
+INFO: generate 10 decay event for particle h 
+INFO: Will use seed 412434698 
+  0%|          | 0/691 [00:00<?, ?it/s]100%|██████████| 691/691 [00:00<00:00, 74280.18it/s]
+  0%|          | 0/691 [00:00<?, ?it/s]100%|██████████| 691/691 [00:00<00:00, 60992.97it/s]INFO: The decayed event file has been moved to the following location:  
+INFO: /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/Events/run_01_decayed_1/unweighted_events.lhe.gz 
+INFO: MadSpin Done 
+INFO: [92mRunning Pythia8 [arXiv:1410.3012][0m 
+Splitting .lhe event file for PY8 parallelization...
+Submitting Pythia8 jobs...
+Pythia8 shower jobs: 1 Idle, 0 Running, 0 Done [0 second]
+Pythia8 shower jobs: 0 Idle, 0 Running, 1 Done [7 seconds]
+Merging results from the split PY8 runs...
+INFO: Pythia8 shower finished after 7 seconds. 
+  === Results Summary for run: run_01_decayed_1 tag: tag_1 ===
+
+     Cross-section :   0.01439 +- 4.437e-05 pb
+     Nb of events :  10
+ 
+INFO: storing files of previous run 
+INFO: Storing Pythia8 files of previous run 
+INFO: Done 
+quit
+INFO:  
+more information in /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm/index.html
+order=LO
+[1;34mCommand "order=LO" not recognized, please try again[0m
+shower=Pythia8
+[1;34mCommand "shower=Pythia8" not recognized, please try again[0m
+detector=OFF
+[1;34mCommand "detector=OFF" not recognized, please try again[0m
+analysis=OFF
+[1;34mCommand "analysis=OFF" not recognized, please try again[0m
+madspin=ON
+[1;34mCommand "madspin=ON" not recognized, please try again[0m
+reweight=ON
+[1;34mCommand "reweight=ON" not recognized, please try again[0m
+done
+[1;34mCommand "done" not recognized, please try again[0m
+quit
+
+ mdl_vev0 =    246.22056907348588     
+ mdl_vev0__exp__2 =    60624.568634871226     
+ mdl_dlam =   0.45759933651977336     
+ mdl_ee0 =   0.31345063981313520     
+ mdl_cw =   0.87538656571726847     
+ mdl_muH =    68.165123028343629     
+ mdl_sw =   0.48342358295983689     
+ mdl_g1 =   0.35807111062562641     
+ mdl_gw =   0.64839749416853931     
+ mdl_lam =    6.9897490058211470E-002
+ mdl_vev =    246.22056907348588     
+ mdl_ee =   0.31345063981313520     
+ mdl_ee__exp__2 =    9.8251303599263817E-002
+ mdl_aEW =    7.8185903165226816E-003
+ aEWM1 =    127.90029398096792     
+ mdl_ee0__exp__2 =    9.8251303599263817E-002
+ mdl_ee0__exp__3 =    3.0796933975663836E-002
+ mdl_vev0__exp__3 =    14927015.789112596     
+  Internal Params evaluated point by point
+  ----------------------------------------
+  
+ mdl_sqrt__aS =   0.34496376621320685     
+ mdl_G__exp__2 =    1.4953981031087418     
+ mdl_G__exp__3 =    1.8286695702272273     
+ mdl_G__exp__4 =    2.2362154867812229     
+ mdl_MU_R__exp__2 =    8315.2513440000002     
+  Couplings of SMEFTatNLO-LO
+  ---------------------------------
+  
+        GC_11 =   0.00000E+00   0.12229E+01
+ R2GC_1297_467 =  0.00000E+00   0.98798E-02
+ R2GC_1298_468 =  0.00000E+00   0.17412E+00
+ R2GC_618_1801 = -0.00000E+00  -0.92422E-02
+ R2GC_631_1814 = -0.00000E+00  -0.22756E+01
+      GC_1822 =   0.00000E+00   0.25987E-02
+      GC_1842 =   0.00000E+00   0.53452E-01
+       GC_322 =  -0.00000E+00  -0.19038E+03
+       GC_420 =   0.00000E+00   0.60899E+02
+       GC_422 =   0.00000E+00   0.37170E-02
+       GC_431 =   0.00000E+00  -0.43558E+02
+       GC_546 =  -0.00000E+00  -0.69856E+00

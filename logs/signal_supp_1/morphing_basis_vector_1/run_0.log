@@ -1,0 +1,837 @@
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.5.1                 2023-07-11         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../srv/localstage/condor/dir_3073310/mg5amcnlo/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+None does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/madminer/cards/mg_commands_0.dat
+The import format was not given, so we guess it as command
+launch /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.5.1                 2023-07-11         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Cards/me5_configuration.txt  
+INFO: load configuration from /srv/localstage/condor/dir_3073310/mg5amcnlo/input/mg5_configuration.txt  
+INFO: load configuration from /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+generate_events run_01
+stty: 'standard input': Inappropriate ioctl for device
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [32mPythia8[0m           |
+| 2. Choose the detector simulation program    [1mdetector[0m = [01mNot Avail.[0m        |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [32mON[0m                |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [32mON[0m                |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=OFF' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+[1;34mfound line : order=LO[0m
+[1;34mThis answer is not valid for current question. Keep it for next question and use here default: 0[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param         : [32mparam_card.dat[0m                         |
+|  [31m2[0m. run           : [32mrun_card.dat[0m                           |
+|  [31m3[0m. pythia8       : [32mpythia8_card.dat[0m                       |
+|  [31m4[0m. madspin       : [32mmadspin_card.dat[0m                       |
+|  [31m5[0m. reweight      : [32mreweight_card.dat[0m                      |
+|  [31m6[0m. MadLoopParams : [32mMadLoopParams.dat[0m                      |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, 3, pythia8, 4, enter path, ... ]
+[1;34mfound line : order=LO[0m
+[1;34mThis answer is not valid for current question. Keep it for next question and use here default: 0[0m
+INFO: Update the dependent parameter of the param_card.dat 
+[1;34mWARNING: update the strong coupling value (alpha_s) to the value from the pdf selected: 0.119 [0m
+[1;34mWARNING: Unknow type of information in the card: dim64f,dim64f2l,dim64f4l [0m
+Generating 25000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+initMadLoop -r -f
+Error: no DISPLAY environment variable specified
+Initializing MadLoop loop-induced matrix elements (this can take some time)...
+MadLoop initialization finished.
+compile Source Directory
+Using random number seed offset = 12689
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P0_gg_hh  
+INFO:  Idle: 1,  Running: 2,  Completed: 0 [ current time: 14h18 ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 1 [  16s  ] 
+INFO: P0_gg_hh/G1 is at 0.0475 +- 0.0013 pb. Now submitting iteration #2. 
+INFO:  Idle: 0,  Running: 2,  Completed: 5 [  43.1s  ] 
+INFO: P0_gg_hh/G1 is at 0.0491 +- 0.000619 pb. Now submitting iteration #3. 
+INFO:  Idle: 0,  Running: 2,  Completed: 9 [  1m 36s  ] 
+INFO: Survey finished for P0_gg_hh/G1 at 0.04976 +- 0.000316 pb 
+INFO:  Idle: 0,  Running: 0,  Completed: 12 [  1m 36s  ] 
+INFO: End survey 
+refine 25000
+Creating Jobs
+INFO: Refine results to 25000 
+INFO: Generating 25000.0 unweighted events. 
+sum of cpu time of last step: 0 second
+INFO: Effective Luminosity 577753.2154340836 pb^-1 
+INFO: need to improve 1 channels 
+- Current estimate of cross-section: 0.04976 +- 0.00031604
+INFO:  Idle: 0,  Running: 12,  Completed: 0 [ current time: 14h19 ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 1 [  1m 11s  ] 
+INFO: P0_gg_hh/G1 is at 4824/28697 (17%) event. Resubmit 20 job at iteration 1. 
+INFO:  Idle: 7,  Running: 12,  Completed: 14 [  2m 25s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 25 [  2m 29s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 26 [  3m 14s  ] 
+INFO: P0_gg_hh/G1 is at 8773/28764 (31%) event. Resubmit 50 job at iteration 2. 
+INFO:  Idle: 37,  Running: 12,  Completed: 35 [  4m 27s  ] 
+INFO:  Idle: 26,  Running: 12,  Completed: 46 [  4m 32s  ] 
+INFO:  Idle: 25,  Running: 12,  Completed: 47 [  5m 39s  ] 
+INFO:  Idle: 16,  Running: 12,  Completed: 56 [  5m 44s  ] 
+INFO:  Idle: 13,  Running: 12,  Completed: 59 [  6m 51s  ] 
+INFO:  Idle: 7,  Running: 12,  Completed: 65 [  6m 54s  ] 
+INFO:  Idle: 3,  Running: 12,  Completed: 69 [  6m 58s  ] 
+INFO:  Idle: 1,  Running: 12,  Completed: 71 [  8m 4s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 77 [  8m 8s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 83 [  8m 20s  ] 
+INFO: P0_gg_hh/G1 is at 26899/28718 ('94%') event. Resubmit 4 job at iteration 3. 
+INFO:  Idle: 0,  Running: 3,  Completed: 86 [  8m 44s  ] 
+INFO: found enough event for P0_gg_hh/G1 
+INFO:  Idle: 0,  Running: 0,  Completed: 90 [  8m 50s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 90 [  8m 50s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 0 second
+INFO: finish refine 
+refine 25000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+ 
+ 
+ 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cumulative sequential time for this run: 10m13s
+     Cross-section :   0.04969 +- 6.111e-05 pb
+     Nb of events :  25000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+INFO: Extracting the banner ... 
+INFO: process: p p > H H QED=2 QCD=2  
+INFO: options: NP=2  
+INFO: Running Reweighting 
+change output default
+change helicity False
+launch --rwgt_name=sm
+INFO: detected model: SMEFTatNLO-LO. Loading... 
+INFO: generating the square matrix element for reweighting 
+INFO: generate p p > H H   QED=2 QCD=2 NP=2   --no_warning=duplicate;define pert_QCD = -5 -4 -3 -2 -1 1 2 3 4 5 21;add process p p > H H    pert_QCD QED=2 QCD=3 NP=2    --no_warning=duplicate; 
+INFO: RETRY with generate p p > H H   QED=2 QCD=2 NP=2  [virt=QCD] ; 
+INFO: Done 8.198 
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m9[0m. plot  : [32mplot_card.dat[0m                                  |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 9, plot, enter path]
+>INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 0.0 # orig: -4.270762
+KEEP:set param_card dim6 5 0.0 # orig: -9.635791
+KEEP:set param_card dim62f 19 0.0 # orig: -5.011696
+KEEP: 
+INFO: Event nb 0 current time: 14h29 
+INFO: Event nb 10  0.16s  
+INFO: Event nb 20  0.29s  
+INFO: Event nb 30  0.4s  
+INFO: Event nb 40  0.51s  
+INFO: Event nb 50  0.62s  
+INFO: Event nb 60  0.73s  
+INFO: Event nb 70  0.84s  
+INFO: Event nb 80  0.95s  
+INFO: Event nb 90  1.1s  
+INFO: Event nb 100  1.2s  
+INFO: Event nb 200  2.3s  
+INFO: Event nb 300  3.4s  
+INFO: Event nb 400  4.5s  
+INFO: Event nb 500  5.6s  
+INFO: Event nb 600  6.7s  
+INFO: Event nb 700  7.8s  
+INFO: Event nb 800  9s  
+INFO: Event nb 900  10.1s  
+INFO: Event nb 1000  11.2s  
+INFO: Event nb 2000  22.3s  
+INFO: Event nb 3000  33.5s  
+INFO: Event nb 4000  44.6s  
+INFO: Event nb 5000  55.8s  
+INFO: Event nb 6000  1m 6s  
+INFO: Event nb 7000  1m 18s  
+INFO: Event nb 8000  1m 29s  
+INFO: Event nb 9000  1m 40s  
+INFO: Event nb 10000  1m 51s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  3m 42s  
+INFO: All event done  (nb_event: 25000)  4m 38s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0157489 pb (indicative error: 0.00177615 pb) 
+launch --rwgt_name=morphing_basis_vector_2
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m9[0m. plot  : [32mplot_card.dat[0m                                  |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 9, plot, enter path]
+>INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 -3.509851 # orig: -4.270762
+KEEP:set param_card dim6 5 -14.88657 # orig: -9.635791
+KEEP:set param_card dim62f 19 6.650933 # orig: -5.011696
+KEEP: 
+INFO: Event nb 0 current time: 14h33 
+INFO: Event nb 10  0.12s  
+INFO: Event nb 20  0.25s  
+INFO: Event nb 30  0.37s  
+INFO: Event nb 40  0.48s  
+INFO: Event nb 50  0.6s  
+INFO: Event nb 60  0.72s  
+INFO: Event nb 70  0.83s  
+INFO: Event nb 80  0.95s  
+INFO: Event nb 90  1.1s  
+INFO: Event nb 100  1.2s  
+INFO: Event nb 200  2.4s  
+INFO: Event nb 300  3.5s  
+INFO: Event nb 400  4.7s  
+INFO: Event nb 500  5.9s  
+INFO: Event nb 600  7.1s  
+INFO: Event nb 700  8.3s  
+INFO: Event nb 800  9.5s  
+INFO: Event nb 900  10.6s  
+INFO: Event nb 1000  11.8s  
+INFO: Event nb 2000  23.6s  
+INFO: Event nb 3000  35.4s  
+INFO: Event nb 4000  47.3s  
+INFO: Event nb 5000  59.1s  
+INFO: Event nb 6000  1m 10s  
+INFO: Event nb 7000  1m 22s  
+INFO: Event nb 8000  1m 34s  
+INFO: Event nb 9000  1m 46s  
+INFO: Event nb 10000  1m 58s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  3m 57s  
+INFO: All event done  (nb_event: 25000)  4m 57s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0755323 pb (indicative error: 0.00451309 pb) 
+launch --rwgt_name=morphing_basis_vector_3
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m9[0m. plot  : [32mplot_card.dat[0m                                  |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 9, plot, enter path]
+>INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 -4.70413 # orig: -4.270762
+KEEP:set param_card dim6 5 -2.237588 # orig: -9.635791
+KEEP:set param_card dim62f 19 4.219889 # orig: -5.011696
+KEEP: 
+INFO: Event nb 0 current time: 14h38 
+INFO: Event nb 10  0.12s  
+INFO: Event nb 20  0.25s  
+INFO: Event nb 30  0.37s  
+INFO: Event nb 40  0.49s  
+INFO: Event nb 50  0.6s  
+INFO: Event nb 60  0.72s  
+INFO: Event nb 70  0.84s  
+INFO: Event nb 80  0.96s  
+INFO: Event nb 90  1.1s  
+INFO: Event nb 100  1.2s  
+INFO: Event nb 200  2.4s  
+INFO: Event nb 300  3.6s  
+INFO: Event nb 400  4.8s  
+INFO: Event nb 500  6s  
+INFO: Event nb 600  7.2s  
+INFO: Event nb 700  8.4s  
+INFO: Event nb 800  9.6s  
+INFO: Event nb 900  10.8s  
+INFO: Event nb 1000  12s  
+INFO: Event nb 2000  23.9s  
+INFO: Event nb 3000  35.9s  
+INFO: Event nb 4000  47.9s  
+INFO: Event nb 5000  59.9s  
+INFO: Event nb 6000  1m 11s  
+INFO: Event nb 7000  1m 23s  
+INFO: Event nb 8000  1m 35s  
+INFO: Event nb 9000  1m 47s  
+INFO: Event nb 10000  1m 59s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  3m 58s  
+INFO: All event done  (nb_event: 25000)  4m 58s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0478474 pb (indicative error: 0.00740687 pb) 
+launch --rwgt_name=morphing_basis_vector_4
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m9[0m. plot  : [32mplot_card.dat[0m                                  |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 9, plot, enter path]
+>INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 0.1140347 # orig: -4.270762
+KEEP:set param_card dim6 5 4.567852 # orig: -9.635791
+KEEP:set param_card dim62f 19 5.437451 # orig: -5.011696
+KEEP: 
+INFO: Event nb 0 current time: 14h43 
+INFO: Event nb 10  0.12s  
+INFO: Event nb 20  0.25s  
+INFO: Event nb 30  0.37s  
+INFO: Event nb 40  0.48s  
+INFO: Event nb 50  0.6s  
+INFO: Event nb 60  0.72s  
+INFO: Event nb 70  0.84s  
+INFO: Event nb 80  0.96s  
+INFO: Event nb 90  1.1s  
+INFO: Event nb 100  1.2s  
+INFO: Event nb 200  2.4s  
+INFO: Event nb 300  3.6s  
+INFO: Event nb 400  4.8s  
+INFO: Event nb 500  6s  
+INFO: Event nb 600  7.2s  
+INFO: Event nb 700  8.4s  
+INFO: Event nb 800  9.6s  
+INFO: Event nb 900  10.8s  
+INFO: Event nb 1000  11.9s  
+INFO: Event nb 2000  23.9s  
+INFO: Event nb 3000  35.8s  
+INFO: Event nb 4000  47.8s  
+INFO: Event nb 5000  59.7s  
+INFO: Event nb 6000  1m 11s  
+INFO: Event nb 7000  1m 23s  
+INFO: Event nb 8000  1m 35s  
+INFO: Event nb 9000  1m 47s  
+INFO: Event nb 10000  1m 59s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  3m 58s  
+INFO: All event done  (nb_event: 25000)  4m 58s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.119269 pb (indicative error: 0.0095422 pb) 
+launch --rwgt_name=morphing_basis_vector_5
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m9[0m. plot  : [32mplot_card.dat[0m                                  |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 9, plot, enter path]
+>INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 2.704957 # orig: -4.270762
+KEEP:set param_card dim6 5 -11.77089 # orig: -9.635791
+KEEP:set param_card dim62f 19 -5.938309 # orig: -5.011696
+KEEP: 
+INFO: Event nb 0 current time: 14h48 
+INFO: Event nb 10  0.12s  
+INFO: Event nb 20  0.25s  
+INFO: Event nb 30  0.37s  
+INFO: Event nb 40  0.48s  
+INFO: Event nb 50  0.6s  
+INFO: Event nb 60  0.72s  
+INFO: Event nb 70  0.84s  
+INFO: Event nb 80  0.96s  
+INFO: Event nb 90  1.1s  
+INFO: Event nb 100  1.2s  
+INFO: Event nb 200  2.4s  
+INFO: Event nb 300  3.6s  
+INFO: Event nb 400  4.8s  
+INFO: Event nb 500  6s  
+INFO: Event nb 600  7.2s  
+INFO: Event nb 700  8.4s  
+INFO: Event nb 800  9.6s  
+INFO: Event nb 900  10.7s  
+INFO: Event nb 1000  11.9s  
+INFO: Event nb 2000  23.9s  
+INFO: Event nb 3000  35.8s  
+INFO: Event nb 4000  48s  
+INFO: Event nb 5000  1m 0s  
+INFO: Event nb 6000  1m 11s  
+INFO: Event nb 7000  1m 24s  
+INFO: Event nb 8000  1m 36s  
+INFO: Event nb 9000  1m 47s  
+INFO: Event nb 10000  1m 59s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  3m 59s  
+INFO: All event done  (nb_event: 25000)  4m 59s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.184887 pb (indicative error: 0.00524731 pb) 
+launch --rwgt_name=morphing_basis_vector_6
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m9[0m. plot  : [32mplot_card.dat[0m                                  |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 9, plot, enter path]
+>INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 4.585811 # orig: -4.270762
+KEEP:set param_card dim6 5 6.747472 # orig: -9.635791
+KEEP:set param_card dim62f 19 -2.432281 # orig: -5.011696
+KEEP: 
+INFO: Event nb 0 current time: 14h53 
+INFO: Event nb 10  0.12s  
+INFO: Event nb 20  0.25s  
+INFO: Event nb 30  0.37s  
+INFO: Event nb 40  0.49s  
+INFO: Event nb 50  0.6s  
+INFO: Event nb 60  0.72s  
+INFO: Event nb 70  0.84s  
+INFO: Event nb 80  0.96s  
+INFO: Event nb 90  1.1s  
+INFO: Event nb 100  1.2s  
+INFO: Event nb 200  2.4s  
+INFO: Event nb 300  3.6s  
+INFO: Event nb 400  4.8s  
+INFO: Event nb 500  6s  
+INFO: Event nb 600  7.2s  
+INFO: Event nb 700  8.4s  
+INFO: Event nb 800  9.6s  
+INFO: Event nb 900  10.8s  
+INFO: Event nb 1000  12s  
+INFO: Event nb 2000  23.9s  
+INFO: Event nb 3000  35.9s  
+INFO: Event nb 4000  48s  
+INFO: Event nb 5000  60s  
+INFO: Event nb 6000  1m 11s  
+INFO: Event nb 7000  1m 23s  
+INFO: Event nb 8000  1m 35s  
+INFO: Event nb 9000  1m 47s  
+INFO: Event nb 10000  1m 59s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  3m 59s  
+INFO: All event done  (nb_event: 25000)  4m 59s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0496115 pb (indicative error: 0.00321662 pb) 
+launch --rwgt_name=morphing_basis_vector_7
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m9[0m. plot  : [32mplot_card.dat[0m                                  |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 9, plot, enter path]
+>INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 -1.246802 # orig: -4.270762
+KEEP:set param_card dim6 5 -14.80999 # orig: -9.635791
+KEEP:set param_card dim62f 19 0.4606651 # orig: -5.011696
+KEEP: 
+INFO: Event nb 0 current time: 14h58 
+INFO: Event nb 10  0.12s  
+INFO: Event nb 20  0.25s  
+INFO: Event nb 30  0.37s  
+INFO: Event nb 40  0.48s  
+INFO: Event nb 50  0.6s  
+INFO: Event nb 60  0.72s  
+INFO: Event nb 70  0.84s  
+INFO: Event nb 80  0.96s  
+INFO: Event nb 90  1.1s  
+INFO: Event nb 100  1.2s  
+INFO: Event nb 200  2.4s  
+INFO: Event nb 300  3.6s  
+INFO: Event nb 400  4.8s  
+INFO: Event nb 500  6s  
+INFO: Event nb 600  7.2s  
+INFO: Event nb 700  8.4s  
+INFO: Event nb 800  9.6s  
+INFO: Event nb 900  10.8s  
+INFO: Event nb 1000  12s  
+INFO: Event nb 2000  24s  
+INFO: Event nb 3000  35.9s  
+INFO: Event nb 4000  47.9s  
+INFO: Event nb 5000  59.9s  
+INFO: Event nb 6000  1m 11s  
+INFO: Event nb 7000  1m 23s  
+INFO: Event nb 8000  1m 35s  
+INFO: Event nb 9000  1m 47s  
+INFO: Event nb 10000  1m 59s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  3m 59s  
+INFO: All event done  (nb_event: 25000)  4m 59s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.127807 pb (indicative error: 0.00245263 pb) 
+launch --rwgt_name=morphing_basis_vector_8
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m9[0m. plot  : [32mplot_card.dat[0m                                  |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 9, plot, enter path]
+>INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 -1.757994 # orig: -4.270762
+KEEP:set param_card dim6 5 7.687006 # orig: -9.635791
+KEEP:set param_card dim62f 19 -4.792287 # orig: -5.011696
+KEEP: 
+INFO: Event nb 0 current time: 15h03 
+INFO: Event nb 10  0.12s  
+INFO: Event nb 20  0.25s  
+INFO: Event nb 30  0.37s  
+INFO: Event nb 40  0.49s  
+INFO: Event nb 50  0.6s  
+INFO: Event nb 60  0.72s  
+INFO: Event nb 70  0.84s  
+INFO: Event nb 80  0.96s  
+INFO: Event nb 90  1.1s  
+INFO: Event nb 100  1.2s  
+INFO: Event nb 200  2.4s  
+INFO: Event nb 300  3.6s  
+INFO: Event nb 400  4.8s  
+INFO: Event nb 500  6s  
+INFO: Event nb 600  7.2s  
+INFO: Event nb 700  8.4s  
+INFO: Event nb 800  9.6s  
+INFO: Event nb 900  10.8s  
+INFO: Event nb 1000  12s  
+INFO: Event nb 2000  23.9s  
+INFO: Event nb 3000  35.9s  
+INFO: Event nb 4000  47.9s  
+INFO: Event nb 5000  59.9s  
+INFO: Event nb 6000  1m 11s  
+INFO: Event nb 7000  1m 23s  
+INFO: Event nb 8000  1m 35s  
+INFO: Event nb 9000  1m 47s  
+INFO: Event nb 10000  1m 59s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  3m 59s  
+INFO: All event done  (nb_event: 25000)  4m 59s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0952372 pb (indicative error: 0.00452769 pb) 
+launch --rwgt_name=morphing_basis_vector_9
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m9[0m. plot  : [32mplot_card.dat[0m                                  |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 9, plot, enter path]
+>INFO: starts to compute weight for events with the following modification to the param_card: 
+INFO: set param_card dim6 4 3.774042 # orig: -4.270762
+KEEP:set param_card dim6 5 0.6799669 # orig: -9.635791
+KEEP:set param_card dim62f 19 4.975328 # orig: -5.011696
+KEEP: 
+INFO: Event nb 0 current time: 15h08 
+INFO: Event nb 10  0.12s  
+INFO: Event nb 20  0.25s  
+INFO: Event nb 30  0.37s  
+INFO: Event nb 40  0.49s  
+INFO: Event nb 50  0.6s  
+INFO: Event nb 60  0.73s  
+INFO: Event nb 70  0.84s  
+INFO: Event nb 80  0.96s  
+INFO: Event nb 90  1.1s  
+INFO: Event nb 100  1.2s  
+INFO: Event nb 200  2.4s  
+INFO: Event nb 300  3.6s  
+INFO: Event nb 400  4.8s  
+INFO: Event nb 500  6s  
+INFO: Event nb 600  7.2s  
+INFO: Event nb 700  8.4s  
+INFO: Event nb 800  9.6s  
+INFO: Event nb 900  10.8s  
+INFO: Event nb 1000  12s  
+INFO: Event nb 2000  23.9s  
+INFO: Event nb 3000  35.9s  
+INFO: Event nb 4000  47.9s  
+INFO: Event nb 5000  60s  
+INFO: Event nb 6000  1m 11s  
+INFO: Event nb 7000  1m 23s  
+INFO: Event nb 8000  1m 35s  
+INFO: Event nb 9000  1m 47s  
+INFO: Event nb 10000  1m 59s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  3m 59s  
+INFO: All event done  (nb_event: 25000)  4m 59s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0284864 pb (indicative error: 0.00360587 pb) 
+INFO: Original cross-section: 0.049691 +- 6.1114e-05 pb (cross-section from sum of weights: 0.049691000000009436) 
+INFO: Computed cross-section: 
+INFO: morphing_basis_vector_2 : 0.0755322821360827 +- 0.00451308692658554 pb 
+INFO: morphing_basis_vector_3 : 0.047847438264310094 +- 0.007406872901535465 pb 
+INFO: morphing_basis_vector_4 : 0.11926863056493774 +- 0.009542203531725656 pb 
+INFO: morphing_basis_vector_5 : 0.18488655273410382 +- 0.005247305682403313 pb 
+INFO: morphing_basis_vector_6 : 0.049611468763741416 +- 0.0032166234257280935 pb 
+INFO: morphing_basis_vector_7 : 0.12780691608854683 +- 0.002452625418730521 pb 
+INFO: morphing_basis_vector_8 : 0.0952371921754265 +- 0.004527689971119282 pb 
+INFO: morphing_basis_vector_9 : 0.02848639227561645 +- 0.0036058708014808766 pb 
+INFO: sm : 0.01574886410056644 +- 0.0017761488002863751 pb 
+INFO: quit rwgt 
+decay_events -from_cards
+INFO: Running MadSpin 
+INFO: This functionality allows for the decay of resonances 
+INFO: in a .lhe file, keeping track of the spin correlation effets. 
+INFO: BE AWARE OF THE CURRENT LIMITATIONS: 
+INFO:   (1) Only a succession of 2 body decay are currently allowed 
+************************************************************
+*                                                          *
+*           W E L C O M E  to  M A D S P I N               *
+*                                                          *
+************************************************************
+INFO: Extracting the banner ... 
+INFO: process: p p > H H QED=2 QCD=2  
+INFO: options: NP=2  
+INFO: detected model: SMEFTatNLO-LO. Loading... 
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Set group_subprocesses to Auto
+Note that you need to regenerate all processes
+import model heft --bypass_check
+[1;34mWARNING: No param_card defined for the new model. We will use the default one but this might completely wrong. [0m
+INFO: detected model: heft. Loading... 
+INFO: reload from .py file 
+INFO: load particles 
+INFO: load vertices 
+INFO: Restrict model heft with file ../../../../srv/localstage/condor/dir_3073310/mg5amcnlo/models/heft/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+[1;34mPass the definition of 'j' and 'p' to 4 flavour scheme.[0m
+Kept definitions of multiparticles l+ / l- / vl / vl~ unchanged
+Removed obsolete multiparticles all
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- m- ve~ vm~ vt~ e+ m+ t b t~ b~ z w+ h h1 w- tt- tt+
+set spinmode None          # Use one of the madspin special mode
+set max_weight_ps_point 400  # number of PS to estimate the maximum for each event
+decay h > b b~
+decay h > b b~
+launch
+INFO: Will use seed 749830823 
+INFO: generate 25000 decay event for particle h 
+INFO: Will use seed 277636980 
+stty: 'standard input': Inappropriate ioctl for device
+  0%|          | 0/691 [00:00<?, ?it/s]100%|██████████| 691/691 [00:00<00:00, 100585.27it/s]stty: 'standard input': Inappropriate ioctl for device
+
+  0%|          | 0/691 [00:00<?, ?it/s]100%|██████████| 691/691 [00:00<00:00, 109882.62it/s]decaying event number 100 [0.07274985313415527 s]
+decaying event number 200 [0.1443173885345459 s]
+decaying event number 300 [0.21570563316345215 s]
+decaying event number 400 [0.2872018814086914 s]
+decaying event number 500 [0.3584475517272949 s]
+decaying event number 600 [0.42958569526672363 s]
+decaying event number 700 [0.5010449886322021 s]
+decaying event number 800 [0.5721697807312012 s]
+decaying event number 900 [0.6429638862609863 s]
+decaying event number 1000 [0.7140903472900391 s]
+decaying event number 2000 [1.427450180053711 s]
+decaying event number 3000 [2.140148878097534 s]
+decaying event number 4000 [2.8524069786071777 s]
+decaying event number 5000 [3.5648128986358643 s]
+decaying event number 6000 [4.27873969078064 s]
+decaying event number 7000 [4.993439674377441 s]
+decaying event number 8000 [5.715167045593262 s]
+decaying event number 9000 [6.42899751663208 s]
+decaying event number 10000 [7.1430299282073975 s]
+decaying event number 20000 [14.382739543914795 s]
+INFO: The decayed event file has been moved to the following location:  
+INFO: /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/Events/run_01_decayed_1/unweighted_events.lhe.gz 
+INFO: MadSpin Done 
+INFO: [92mRunning Pythia8 [arXiv:1410.3012][0m 
+Splitting .lhe event file for PY8 parallelization...
+Submitting Pythia8 jobs...
+Pythia8 shower jobs: 1 Idle, 11 Running, 0 Done [13 seconds]
+Pythia8 shower jobs: 0 Idle, 11 Running, 1 Done [4m59s]
+Pythia8 shower jobs: 0 Idle, 10 Running, 2 Done [5m01s]
+Pythia8 shower jobs: 0 Idle, 9 Running, 3 Done [5m01s]
+Pythia8 shower jobs: 0 Idle, 8 Running, 4 Done [5m02s]
+Pythia8 shower jobs: 0 Idle, 7 Running, 5 Done [5m03s]
+Pythia8 shower jobs: 0 Idle, 6 Running, 6 Done [5m03s]
+Pythia8 shower jobs: 0 Idle, 5 Running, 7 Done [5m04s]
+Pythia8 shower jobs: 0 Idle, 4 Running, 8 Done [5m04s]
+Pythia8 shower jobs: 0 Idle, 3 Running, 9 Done [5m04s]
+Pythia8 shower jobs: 0 Idle, 2 Running, 10 Done [5m05s]
+Pythia8 shower jobs: 0 Idle, 1 Running, 11 Done [5m05s]
+Pythia8 shower jobs: 0 Idle, 0 Running, 12 Done [5m05s]
+Merging results from the split PY8 runs...
+INFO: Pythia8 shower finished after 5m37s. 
+  === Results Summary for run: run_01_decayed_1 tag: tag_1 ===
+
+     Cross-section :   0.04521 +- 5.561e-05 pb
+     Nb of events :  25000
+ 
+INFO: storing files of previous run 
+INFO: Storing Pythia8 files of previous run 
+INFO: Done 
+quit
+INFO:  
+more information in /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes/signal_supp_1/morphing_basis_vector_1/index.html
+order=LO
+[1;34mCommand "order=LO" not recognized, please try again[0m
+shower=Pythia8
+[1;34mCommand "shower=Pythia8" not recognized, please try again[0m
+detector=OFF
+[1;34mCommand "detector=OFF" not recognized, please try again[0m
+analysis=OFF
+[1;34mCommand "analysis=OFF" not recognized, please try again[0m
+madspin=ON
+[1;34mCommand "madspin=ON" not recognized, please try again[0m
+reweight=ON
+[1;34mCommand "reweight=ON" not recognized, please try again[0m
+done
+[1;34mCommand "done" not recognized, please try again[0m
+quit
+
+ mdl_vev0 =    246.22056907348588     
+ mdl_vev0__exp__2 =    60624.568634871226     
+ mdl_dlam =   0.45759933651977336     
+ mdl_ee0 =   0.31345063981313520     
+ mdl_cw =   0.87538656571726847     
+ mdl_muH =    68.165123028343629     
+ mdl_sw =   0.48342358295983689     
+ mdl_g1 =   0.35807111062562641     
+ mdl_gw =   0.64839749416853931     
+ mdl_lam =    6.9897490058211470E-002
+ mdl_vev =    246.22056907348588     
+ mdl_ee =   0.31345063981313520     
+ mdl_ee__exp__2 =    9.8251303599263817E-002
+ mdl_aEW =    7.8185903165226816E-003
+ aEWM1 =    127.90029398096792     
+ mdl_ee0__exp__2 =    9.8251303599263817E-002
+ mdl_ee0__exp__3 =    3.0796933975663836E-002
+ mdl_vev0__exp__3 =    14927015.789112596     
+  Internal Params evaluated point by point
+  ----------------------------------------
+  
+ mdl_sqrt__aS =   0.34496376621320685     
+ mdl_G__exp__2 =    1.4953981031087418     
+ mdl_G__exp__3 =    1.8286695702272273     
+ mdl_G__exp__4 =    2.2362154867812229     
+ mdl_MU_R__exp__2 =    8315.2513440000002     
+  Couplings of SMEFTatNLO-LO
+  ---------------------------------
+  
+        GC_11 =   0.00000E+00   0.12229E+01
+ R2GC_1297_467 =  0.00000E+00   0.98798E-02
+ R2GC_1298_468 =  0.00000E+00   0.17412E+00
+ R2GC_618_1801 = -0.00000E+00  -0.92422E-02
+ R2GC_631_1814 = -0.00000E+00  -0.22756E+01
+      GC_1822 =   0.00000E+00   0.25987E-02
+      GC_1842 =   0.00000E+00   0.53452E-01
+       GC_322 =  -0.00000E+00  -0.19038E+03
+       GC_420 =   0.00000E+00   0.60899E+02
+       GC_422 =   0.00000E+00   0.37170E-02
+       GC_431 =   0.00000E+00  -0.43558E+02
+       GC_546 =  -0.00000E+00  -0.69856E+00

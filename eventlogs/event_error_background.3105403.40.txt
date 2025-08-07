@@ -1,0 +1,46 @@
+19:32 madminer.utils.inter INFO    HDF5 file does not contain nuisance parameters information
+19:32 madminer.utils.inter INFO    HDF5 file does not contain finite difference information
+19:32 madminer.utils.inter INFO    HDF5 file does not contain observables information
+19:32 madminer.utils.inter INFO    HDF5 file does not contain sample summary information
+19:32 madminer.utils.inter INFO    HDF5 file does not contain sample information
+19:32 madminer.utils.inter INFO    HDF5 file does not contain systematic information
+19:32 madminer.core.madmin INFO    Found 3 parameters:
+19:32 madminer.core.madmin INFO       cp (LHA: DIM6 5, Power: 2, Range: (-16, 8))
+19:32 madminer.core.madmin INFO       cdp (LHA: DIM6 4, Power: 2, Range: (-5, 6))
+19:32 madminer.core.madmin INFO       ctp (LHA: DIM62F 19, Power: 2, Range: (-6, 8))
+19:32 madminer.core.madmin INFO    Found 10 benchmarks:
+19:32 madminer.core.madmin INFO       sm: cp = 0.00e+00, cdp = 0.00e+00, ctp = 0.00e+00
+19:32 madminer.core.madmin INFO       morphing_basis_vector_1: cp = -9.64e+00, cdp = -4.27e+00, ctp = -5.01e+00
+19:32 madminer.core.madmin INFO       morphing_basis_vector_2: cp = -1.49e+01, cdp = -3.51e+00, ctp = 6.65
+19:32 madminer.core.madmin INFO       morphing_basis_vector_3: cp = -2.24e+00, cdp = -4.70e+00, ctp = 4.22
+19:32 madminer.core.madmin INFO       morphing_basis_vector_4: cp = 4.57, cdp = 0.11, ctp = 5.44
+19:32 madminer.core.madmin INFO       morphing_basis_vector_5: cp = -1.18e+01, cdp = 2.70, ctp = -5.94e+00
+19:32 madminer.core.madmin INFO       morphing_basis_vector_6: cp = 6.75, cdp = 4.59, ctp = -2.43e+00
+19:32 madminer.core.madmin INFO       morphing_basis_vector_7: cp = -1.48e+01, cdp = -1.25e+00, ctp = 0.46
+19:32 madminer.core.madmin INFO       morphing_basis_vector_8: cp = 7.69, cdp = -1.76e+00, ctp = -4.79e+00
+19:32 madminer.core.madmin INFO       morphing_basis_vector_9: cp = 0.68, cdp = 3.77, ctp = 4.98
+19:32 madminer.core.madmin INFO    Found morphing setup with 10 components
+19:32 madminer.core.madmin INFO    Did not find systematics setup.
+19:32 madminer.utils.inter INFO    Generating MadGraph process folder from .//cards/proc_card_background.dat at /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_41
+19:32 madminer.utils.inter INFO    Calling MadGraph: /srv/localstage/condor/dir_1844114/mg5amcnlo/bin/mg5_aMC /tmp/generate.mg5
+19:34 madminer.core.madmin INFO    Run 0
+19:34 madminer.core.madmin INFO      Sampling from benchmark: sm
+19:34 madminer.core.madmin INFO      Original run card:       /srv/localstage/condor/dir_1844114/run_card_background.dat
+19:34 madminer.core.madmin INFO      Original Pythia8 card:   .//cards/pythia8_card.dat
+19:34 madminer.core.madmin INFO      Original MadSpin card:   None
+19:34 madminer.core.madmin INFO      Original config card:    None
+19:34 madminer.core.madmin INFO      Copied run card:         madminer/cards/run_card_0.dat
+19:34 madminer.core.madmin INFO      Copied Pythia8 card:     madminer/cards/pythia8_card_0.dat
+19:34 madminer.core.madmin INFO      Copied MadSpin card:     None
+19:34 madminer.core.madmin INFO      Copied config card:      None
+19:34 madminer.core.madmin INFO      Param card:              madminer/cards/param_card_0.dat
+19:34 madminer.core.madmin INFO      Reweight card:           madminer/cards/reweight_card_0.dat
+19:34 madminer.core.madmin INFO      Log file:                run_0.log
+19:34 madminer.core.madmin INFO    Creating param and reweight cards in /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_41/madminer/cards/param_card_0.dat, /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_41/madminer/cards/reweight_card_0.dat
+19:34 madminer.utils.inter INFO    Starting MadGraph and Pythia in /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_41
+19:34 madminer.utils.inter INFO    Calling MadGraph: /srv/localstage/condor/dir_1844114/mg5amcnlo/bin/mg5_aMC /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_41/madminer/cards/mg_commands_0.dat
+20:33 madminer.core.madmin INFO    Finished running MadGraph! Please check that events were successfully generated in the following folders:
+
+/vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_41/Events/run_01
+
+

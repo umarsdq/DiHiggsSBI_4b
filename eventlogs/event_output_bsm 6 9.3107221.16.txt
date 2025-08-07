@@ -1,0 +1,14 @@
+Using scratch directory: /srv/localstage/condor/dir_3306628
+Original working directory: /vols/cms/us322/dihiggs_4b
+Extracting MadGraph installation...
+MadGraph extracted to: /srv/localstage/condor/dir_3306628/mg5amcnlo
+Returned to working directory: /vols/cms/us322/dihiggs_4b
+BSM job: using supp_id from command line argument: 6, queue_line: 9
+Generated job ID: 9 (CLUSTER=3107221, PROCESS=16)
+Using Condor scratch directory: /srv/localstage/condor/dir_3306628
+Running BSM generation with supp_id 6 and random seed
+Modified run card with seed: 7227
+
+Running at energy 14 TeV
+Number of runs: 1
+Job completed successfully

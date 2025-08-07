@@ -1,0 +1,13 @@
+Using scratch directory: /srv/localstage/condor/dir_1958160
+Original working directory: /vols/cms/us322/dihiggs_4b
+Extracting MadGraph installation...
+MadGraph extracted to: /srv/localstage/condor/dir_1958160/mg5amcnlo
+Returned to working directory: /vols/cms/us322/dihiggs_4b
+Generated job ID: 308 (CLUSTER=3105403, PROCESS=307)
+Using Condor scratch directory: /srv/localstage/condor/dir_1958160
+Running background generation (-b) with random seed
+Modified run card with seed: 11158
+
+Running at energy 14 TeV
+Number of runs: 1
+Job completed successfully

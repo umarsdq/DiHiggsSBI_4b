@@ -9,8 +9,8 @@ set -e  # Exit on any error
 echo "Setting up directory structure for Delphes processing from parallel jobs..."
 
 # Create base directory
-FINAL_EVENTS_DIR="/vols/cms/us322/02b_final_events_14_new"
-SOURCE_DIR="/vols/cms/us322/02_event_generation_14_new"
+FINAL_EVENTS_DIR="/vols/cms/us322/events_4b/02b_final_events_4b"
+SOURCE_DIR="/vols/cms/us322/events_4b/02_event_generation_4b"
 
 mkdir -p "$FINAL_EVENTS_DIR"
 
@@ -138,9 +138,9 @@ copy_bsm_jobs() {
 }
 
 # Execute the copy functions
-# copy_signal_sm_jobs
-# copy_background_jobs
-# copy_bsm_jobs
+copy_signal_sm_jobs
+copy_background_jobs
+copy_bsm_jobs
 
 echo "Directory structure created successfully!"
 echo "Final structure:"

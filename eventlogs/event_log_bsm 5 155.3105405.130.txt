@@ -1,0 +1,42 @@
+000 (3105405.130.000) 2025-08-06 19:20:59 Job submitted from host: <146.179.108.134:9618?addrs=146.179.108.134-9618&alias=htcmaster00.hep.ph.ic.ac.uk&noUDP&sock=schedd_935_e924>
+...
+001 (3105405.130.000) 2025-08-06 21:15:21 Job executing on host: <146.179.108.52:9618?addrs=146.179.108.52-9618+[2a0c-5bc0-88-111-92e2-baff-fe9b-7fc0]-9618&alias=lxa00.hep.ph.ic.ac.uk&noUDP&sock=startd_1765_38bf>
+	SlotName: slot1_5@lxa00.hep.ph.ic.ac.uk
+	CondorScratchDir = "/srv/localstage/condor/dir_2948600"
+	Cpus = 1
+	Disk = 2049024
+	GPUs = 0
+	Memory = 4000
+...
+006 (3105405.130.000) 2025-08-06 21:15:35 Image size of job updated: 928
+	1  -  MemoryUsage of job (MB)
+	928  -  ResidentSetSize of job (KB)
+...
+006 (3105405.130.000) 2025-08-06 21:17:35 Image size of job updated: 380076
+	343  -  MemoryUsage of job (MB)
+	350500  -  ResidentSetSize of job (KB)
+...
+006 (3105405.130.000) 2025-08-06 21:19:35 Image size of job updated: 1116276
+	1091  -  MemoryUsage of job (MB)
+	1116276  -  ResidentSetSize of job (KB)
+...
+005 (3105405.130.000) 2025-08-06 22:21:24 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:02:03, Sys 0 00:00:50  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:02:03, Sys 0 00:00:50  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            : 275000     2048000   2049024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :   1091        4000      4000 
+	   TimeExecute (s)      :   3963                       
+	   TimeSlotBusy (s)     :   3963                       
+
+	Job terminated of its own accord at 2025-08-06T21:21:24Z with exit-code 0.
+...

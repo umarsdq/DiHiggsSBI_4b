@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "02_generate_events_parallel.py", line 6, in <module>
+    from madminer.core import MadMiner
+ModuleNotFoundError: No module named 'madminer.core'

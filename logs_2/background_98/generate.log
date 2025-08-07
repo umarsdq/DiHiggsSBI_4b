@@ -1,0 +1,123 @@
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.5.1                 2023-07-11         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../srv/localstage/condor/dir_3046366/mg5amcnlo/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+None does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /tmp/generate.mg5
+The import format was not given, so we guess it as command
+generate p p > b b~ b b~
+No model currently active, so we import the Standard Model
+INFO: reload from .py file 
+INFO: load particles 
+INFO: load vertices 
+INFO: Restrict model sm with file ../../../../srv/localstage/condor/dir_3046366/mg5amcnlo/models/sm/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g u c d s u~ c~ d~ s~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t b t~ b~ z w+ h w- ta- ta+
+INFO: Checking for minimal orders which gives processes. 
+INFO: Please specify coupling orders to bypass this step. 
+INFO: Trying coupling order WEIGHTED<=4: WEIGTHED IS QCD+2*QED 
+INFO: Trying process: g g > b b~ b b~ WEIGHTED<=4 @1  
+INFO: Process has 72 diagrams 
+INFO: Trying process: u u~ > b b~ b b~ WEIGHTED<=4 @1  
+INFO: Process has 14 diagrams 
+INFO: Trying process: u c~ > b b~ b b~ WEIGHTED<=4 @1  
+INFO: Trying process: c u~ > b b~ b b~ WEIGHTED<=4 @1  
+INFO: Trying process: c c~ > b b~ b b~ WEIGHTED<=4 @1  
+INFO: Process has 14 diagrams 
+INFO: Trying process: d d~ > b b~ b b~ WEIGHTED<=4 @1  
+INFO: Process has 14 diagrams 
+INFO: Trying process: d s~ > b b~ b b~ WEIGHTED<=4 @1  
+INFO: Trying process: s d~ > b b~ b b~ WEIGHTED<=4 @1  
+INFO: Trying process: s s~ > b b~ b b~ WEIGHTED<=4 @1  
+INFO: Process has 14 diagrams 
+INFO: Process u~ u > b b~ b b~ added to mirror process u u~ > b b~ b b~ 
+INFO: Process c~ c > b b~ b b~ added to mirror process c c~ > b b~ b b~ 
+INFO: Process d~ d > b b~ b b~ added to mirror process d d~ > b b~ b b~ 
+INFO: Process s~ s > b b~ b b~ added to mirror process s s~ > b b~ b b~ 
+5 processes with 128 diagrams generated in 0.662 s
+Total: 5 processes with 128 diagrams
+output /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_98
+INFO: directory /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_98 already exists.
+If you continue this directory will be deleted and replaced.
+Do you want to continue? [[4my[0m, n]
+[1mThe answer to the previous question is not set in your input file[0m
+[1mUse y value[0m
+INFO: initialize a new directory: background_98 
+INFO: remove old information in background_98 
+INFO: Organizing processes into subprocess groups 
+INFO: Generating Helas calls for process: g g > b b~ b b~ WEIGHTED<=4 @1 
+INFO: Processing color information for process: g g > b b~ b b~ @1 
+INFO: Generating Helas calls for process: u u~ > b b~ b b~ WEIGHTED<=4 @1 
+INFO: Processing color information for process: u u~ > b b~ b b~ @1 
+INFO: Combined process c c~ > b b~ b b~ WEIGHTED<=4 @1 with process u u~ > b b~ b b~ WEIGHTED<=4 @1 
+INFO: Combined process d d~ > b b~ b b~ WEIGHTED<=4 @1 with process u u~ > b b~ b b~ WEIGHTED<=4 @1 
+INFO: Combined process s s~ > b b~ b b~ WEIGHTED<=4 @1 with process u u~ > b b~ b b~ WEIGHTED<=4 @1 
+INFO: Creating files in directory P1_gg_bbxbbx 
+INFO: Generating Feynman diagrams for Process: g g > b b~ b b~ WEIGHTED<=4 @1 
+INFO: Finding symmetric diagrams for subprocess group gg_bbxbbx 
+INFO: Creating files in directory P1_qq_bbxbbx 
+INFO: Generating Feynman diagrams for Process: u u~ > b b~ b b~ WEIGHTED<=4 @1 
+INFO: Finding symmetric diagrams for subprocess group qq_bbxbbx 
+Generated helas calls for 2 subprocesses (86 diagrams) in 0.226 s
+Wrote files for 152 helas calls in 0.510 s
+ALOHA: aloha starts to compute helicity amplitudes
+ALOHA: aloha creates 5 routines in  28.780 s
+save configuration file to /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_98/Cards/me5_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate jpeg diagrams 
+INFO: Generate web pages 
+Output to directory /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_98 done.
+Type "launch" to generate events from this process, or see
+/vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_98/README
+Run "open index.html" to see more information about this process.
+quit

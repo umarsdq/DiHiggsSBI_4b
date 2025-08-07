@@ -1,0 +1,50 @@
+000 (3105485.038.000) 2025-08-06 22:15:06 Job submitted from host: <146.179.108.134:9618?addrs=146.179.108.134-9618&alias=htcmaster00.hep.ph.ic.ac.uk&noUDP&sock=schedd_935_e924>
+...
+001 (3105485.038.000) 2025-08-06 22:15:07 Job executing on host: <146.179.108.61:9618?addrs=146.179.108.61-9618+[2a0c-5bc0-88-111-92e2-baff-fe9b-8380]-9618&alias=lxa09.hep.ph.ic.ac.uk&noUDP&sock=startd_1767_97ef>
+	SlotName: slot1_11@lxa09.hep.ph.ic.ac.uk
+	CondorScratchDir = "/srv/localstage/condor/dir_3323238"
+	Cpus = 1
+	Disk = 2049024
+	GPUs = 0
+	Memory = 4000
+...
+006 (3105485.038.000) 2025-08-06 22:15:20 Image size of job updated: 892
+	1  -  MemoryUsage of job (MB)
+	892  -  ResidentSetSize of job (KB)
+...
+006 (3105485.038.000) 2025-08-06 22:17:20 Image size of job updated: 170800
+	128  -  MemoryUsage of job (MB)
+	131020  -  ResidentSetSize of job (KB)
+...
+006 (3105485.038.000) 2025-08-06 22:19:21 Image size of job updated: 359012
+	348  -  MemoryUsage of job (MB)
+	355772  -  ResidentSetSize of job (KB)
+...
+006 (3105485.038.000) 2025-08-06 22:21:22 Image size of job updated: 1018400
+	925  -  MemoryUsage of job (MB)
+	947116  -  ResidentSetSize of job (KB)
+...
+006 (3105485.038.000) 2025-08-06 22:23:23 Image size of job updated: 1084292
+	925  -  MemoryUsage of job (MB)
+	947116  -  ResidentSetSize of job (KB)
+...
+005 (3105485.038.000) 2025-08-06 23:16:56 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:58:15, Sys 0 00:00:47  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:58:15, Sys 0 00:00:47  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            : 275000     2048000   2049024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :    925        4000      4000 
+	   TimeExecute (s)      :   3709                       
+	   TimeSlotBusy (s)     :   3709                       
+
+	Job terminated of its own accord at 2025-08-06T22:16:56Z with exit-code 0.
+...

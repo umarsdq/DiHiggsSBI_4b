@@ -23,7 +23,7 @@
 *    Type 'tutorial MadLoop' to learn how MadLoop works    *
 *                                                          *
 ************************************************************
-load MG5 configuration from ../../../../srv/localstage/condor/dir_2610342/mg5amcnlo/input/mg5_configuration.txt 
+load MG5 configuration from ../../../../srv/localstage/condor/dir_1916058/mg5amcnlo/input/mg5_configuration.txt 
 fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
  Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
  MG5_aMC> set fastjet /PATH/TO/fastjet-config
@@ -45,9 +45,9 @@ Note that you can still compile and run aMC@NLO with the built-in PDFs
 Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
 Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
 Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
-import /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/madminer/cards/mg_commands_0.dat
+import /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/madminer/cards/mg_commands_0.dat
 The import format was not given, so we guess it as command
-launch /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1
+launch /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1
 ************************************************************
 *                                                          *
 *                      W E L C O M E to                    *
@@ -68,9 +68,9 @@ launch /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1
 *               Type 'help' for in-line help.              *
 *                                                          *
 ************************************************************
-INFO: load configuration from /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Cards/me5_configuration.txt  
-INFO: load configuration from /srv/localstage/condor/dir_2610342/mg5amcnlo/input/mg5_configuration.txt  
-INFO: load configuration from /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Cards/me5_configuration.txt  
+INFO: load configuration from /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Cards/me5_configuration.txt  
+INFO: load configuration from /srv/localstage/condor/dir_1916058/mg5amcnlo/input/mg5_configuration.txt  
+INFO: load configuration from /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Cards/me5_configuration.txt  
 Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
 generate_events run_01
 stty: 'standard input': Inappropriate ioctl for device
@@ -110,7 +110,7 @@ Do you want to edit a card (press enter to bypass editing)?
 INFO: Update the dependent parameter of the param_card.dat 
 [1;34mWARNING: update the strong coupling value (alpha_s) to the value from the pdf selected: 0.119 [0m
 [1;34mWARNING: Unknow type of information in the card: dim64f4l,dim64f,dim64f2l [0m
-Generating 10 events with run name run_01
+Generating 25000 events with run name run_01
 survey  run_01 
 INFO: compile directory 
 initMadLoop -r -f
@@ -118,33 +118,77 @@ Error: no DISPLAY environment variable specified
 Initializing MadLoop loop-induced matrix elements (this can take some time)...
 MadLoop initialization finished.
 compile Source Directory
-Using random number seed offset = 26849
+Using random number seed offset = 979
 INFO: Running Survey 
 Creating Jobs
 Working on SubProcesses
 INFO:     P0_gg_hh  
-INFO:  Idle: 1,  Running: 3,  Completed: 0 [ current time: 17h02 ] 
-INFO:  Idle: 0,  Running: 3,  Completed: 1 [  12.9s  ] 
-INFO: P0_gg_hh/G1 is at 0.0159 +- 0.000606 pb. Now submitting iteration #2. 
-INFO:  Idle: 0,  Running: 3,  Completed: 6 [  35.2s  ] 
-INFO: P0_gg_hh/G1 is at 0.01589 +- 1.32e-05 pb. Now submitting iteration #3. 
+INFO:  Idle: 1,  Running: 3,  Completed: 0 [ current time: 22h16 ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 1 [  13s  ] 
+INFO: P0_gg_hh/G1 is at 0.0158 +- 0.000621 pb. Now submitting iteration #2. 
+INFO:  Idle: 0,  Running: 3,  Completed: 6 [  35.1s  ] 
+INFO: P0_gg_hh/G1 is at 0.015761 +- 4.8e-06 pb. Now submitting iteration #3. 
 INFO:  Idle: 0,  Running: 3,  Completed: 11 [  1m 16s  ] 
-INFO: Survey finished for P0_gg_hh/G1 at 0.01578 +- 3.68e-05 pb 
-INFO:  Idle: 0,  Running: 0,  Completed: 15 [  1m 16s  ] 
+INFO: Survey finished for P0_gg_hh/G1 at 0.01592 +- 5.25e-05 pb 
+INFO:  Idle: 0,  Running: 0,  Completed: 15 [  1m 17s  ] 
 INFO: End survey 
-refine 10
+refine 25000
 Creating Jobs
-INFO: Refine results to 10 
-INFO: Generating 10.0 unweighted events. 
+INFO: Refine results to 25000 
+INFO: Generating 25000.0 unweighted events. 
 sum of cpu time of last step: 0 second
-INFO: Effective Luminosity 696.8641114982578 pb^-1 
-INFO: need to improve 0 channels 
-- Current estimate of cross-section: 0.015785 +- 3.6798e-05
-INFO:  Idle: 0,  Running: 0,  Completed: 0 [ current time: 17h03 ] 
+INFO: Effective Luminosity 1806182.0694854558 pb^-1 
+INFO: need to improve 1 channels 
+- Current estimate of cross-section: 0.015917 +- 5.2498e-05
+INFO:  Idle: 0,  Running: 16,  Completed: 0 [ current time: 22h17 ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 1 [  55.5s  ] 
+INFO: P0_gg_hh/G1 is at 2518/28634 (8.8%) event. Resubmit 40 job at iteration 1. 
+INFO:  Idle: 23,  Running: 16,  Completed: 18 [  1m 52s  ] 
+INFO:  Idle: 9,  Running: 16,  Completed: 32 [  1m 57s  ] 
+INFO:  Idle: 7,  Running: 16,  Completed: 34 [  2m 47s  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 47 [  2m 51s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 49 [  2m 54s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 50 [  3m 17s  ] 
+INFO: P0_gg_hh/G1 is at 8840/28639 (31%) event. Resubmit 100 job at iteration 2. 
+INFO:  Idle: 83,  Running: 16,  Completed: 59 [  4m 14s  ] 
+INFO:  Idle: 69,  Running: 16,  Completed: 73 [  4m 18s  ] 
+INFO:  Idle: 67,  Running: 16,  Completed: 75 [  5m 10s  ] 
+INFO:  Idle: 54,  Running: 16,  Completed: 88 [  5m 15s  ] 
+INFO:  Idle: 51,  Running: 16,  Completed: 91 [  6m 6s  ] 
+INFO:  Idle: 39,  Running: 16,  Completed: 103 [  6m 10s  ] 
+INFO:  Idle: 35,  Running: 16,  Completed: 107 [  7m 2s  ] 
+INFO:  Idle: 23,  Running: 16,  Completed: 119 [  7m 6s  ] 
+INFO:  Idle: 19,  Running: 16,  Completed: 123 [  7m 58s  ] 
+INFO:  Idle: 7,  Running: 16,  Completed: 135 [  8m 2s  ] 
+INFO:  Idle: 4,  Running: 16,  Completed: 138 [  8m 11s  ] 
+INFO:  Idle: 3,  Running: 16,  Completed: 139 [  8m 54s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 152 [  8m 57s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 155 [  9m 10s  ] 
+INFO: P0_gg_hh/G1 is at 24695/28650 ('86%') event. Resubmit 25 job at iteration 3. 
+INFO:  Idle: 8,  Running: 16,  Completed: 160 [  10m 6s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 176 [  10m 38s  ] 
+INFO: P0_gg_hh/G1 is at 21109/28632 ('74%') event. Resubmit 37 job at iteration 4. 
+INFO:  Idle: 20,  Running: 16,  Completed: 186 [  11m 35s  ] 
+INFO:  Idle: 4,  Running: 16,  Completed: 202 [  12m 30s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 218 [  12m 48s  ] 
+INFO: P0_gg_hh/G1 is at 25451/28619 ('89%') event. Resubmit 27 job at iteration 5. 
+INFO:  Idle: 10,  Running: 16,  Completed: 224 [  13m 45s  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 240 [  14m 24s  ] 
+INFO: P0_gg_hh/G1 is at 22952/28626 ('80%') event. Resubmit 40 job at iteration 6. 
+INFO:  Idle: 23,  Running: 16,  Completed: 252 [  15m 20s  ] 
+INFO:  Idle: 8,  Running: 16,  Completed: 267 [  15m 23s  ] 
+INFO:  Idle: 7,  Running: 16,  Completed: 268 [  16m 16s  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 281 [  16m 19s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 284 [  16m 45s  ] 
+INFO: P0_gg_hh/G1 is at 26725/28626 ('93%') event. Resubmit 21 job at iteration 7. 
+INFO:  Idle: 4,  Running: 16,  Completed: 293 [  17m 42s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 309 [  17m 59s  ] 
+INFO: found enough event for P0_gg_hh/G1 
+INFO:  Idle: 0,  Running: 0,  Completed: 314 [  18m 0s  ] 
 INFO: Combining runs 
 sum of cpu time of last step: 0 second
 INFO: finish refine 
-refine 10 --treshold=0.9
+refine 25000 --treshold=0.9
 No need for second refine due to stability of cross-section
 INFO: Combining Events 
  
@@ -152,9 +196,9 @@ INFO: Combining Events
  
   === Results Summary for run: run_01 tag: tag_1 ===
 
-     Cumulative sequential time for this run: 1m15s
-     Cross-section :   0.01579 +- 3.68e-05 pb
-     Nb of events :  10
+     Cumulative sequential time for this run: 19m01s
+     Cross-section :   0.01585 +- 9.609e-06 pb
+     Nb of events :  25000
  
 store_events
 INFO: Storing parton level results 
@@ -171,7 +215,7 @@ INFO: detected model: SMEFTatNLO-LO. Loading...
 INFO: generating the square matrix element for reweighting 
 INFO: generate p p > H H   QED=2 QCD=2 NP=2   --no_warning=duplicate;define pert_QCD = -5 -4 -3 -2 -1 1 2 3 4 5 21;add process p p > H H    pert_QCD QED=2 QCD=3 NP=2    --no_warning=duplicate; 
 INFO: RETRY with generate p p > H H   QED=2 QCD=2 NP=2  [virt=QCD] ; 
-INFO: Done 6.562 
+INFO: Done 6.973 
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
 |  [31m1[0m. param : [32mparam_card.dat[0m                                 |
@@ -190,10 +234,40 @@ INFO: set param_card dim6 4 -4.270762 # orig: 0.0
 KEEP:set param_card dim6 5 -9.635791 # orig: 0.0
 KEEP:set param_card dim62f 19 -5.011696 # orig: 0.0
 KEEP: 
-INFO: Event nb 0 current time: 17h04 
-INFO: All event done  (nb_event: 10)  0.13s  
-INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
-INFO: new cross-section is : 0.0824797 pb (indicative error: 0.107103 pb) 
+INFO: Event nb 0 current time: 22h36 
+INFO: Event nb 10  0.13s  
+INFO: Event nb 20  0.21s  
+INFO: Event nb 30  0.29s  
+INFO: Event nb 40  0.37s  
+INFO: Event nb 50  0.45s  
+INFO: Event nb 60  0.53s  
+INFO: Event nb 70  0.61s  
+INFO: Event nb 80  0.7s  
+INFO: Event nb 90  0.78s  
+INFO: Event nb 100  0.86s  
+INFO: Event nb 200  1.7s  
+INFO: Event nb 300  2.5s  
+INFO: Event nb 400  3.3s  
+INFO: Event nb 500  4.1s  
+INFO: Event nb 600  5s  
+INFO: Event nb 700  5.8s  
+INFO: Event nb 800  6.7s  
+INFO: Event nb 900  7.5s  
+INFO: Event nb 1000  8.3s  
+INFO: Event nb 2000  16.5s  
+INFO: Event nb 3000  24.6s  
+INFO: Event nb 4000  32.9s  
+INFO: Event nb 5000  41s  
+INFO: Event nb 6000  49.1s  
+INFO: Event nb 7000  57.3s  
+INFO: Event nb 8000  1m 5s  
+INFO: Event nb 9000  1m 13s  
+INFO: Event nb 10000  1m 21s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  2m 43s  
+INFO: All event done  (nb_event: 25000)  3m 23s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0476866 pb (indicative error: 0.0167398 pb) 
 launch --rwgt_name=morphing_basis_vector_2
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
@@ -213,10 +287,40 @@ INFO: set param_card dim6 4 -3.509851 # orig: 0.0
 KEEP:set param_card dim6 5 -14.88657 # orig: 0.0
 KEEP:set param_card dim62f 19 6.650933 # orig: 0.0
 KEEP: 
-INFO: Event nb 0 current time: 17h04 
-INFO: All event done  (nb_event: 10)  0.092s  
-INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
-INFO: new cross-section is : 0.130964 pb (indicative error: 0.177559 pb) 
+INFO: Event nb 0 current time: 22h39 
+INFO: Event nb 10  0.083s  
+INFO: Event nb 20  0.16s  
+INFO: Event nb 30  0.24s  
+INFO: Event nb 40  0.33s  
+INFO: Event nb 50  0.41s  
+INFO: Event nb 60  0.49s  
+INFO: Event nb 70  0.57s  
+INFO: Event nb 80  0.65s  
+INFO: Event nb 90  0.73s  
+INFO: Event nb 100  0.81s  
+INFO: Event nb 200  1.6s  
+INFO: Event nb 300  2.4s  
+INFO: Event nb 400  3.2s  
+INFO: Event nb 500  4.1s  
+INFO: Event nb 600  4.9s  
+INFO: Event nb 700  5.7s  
+INFO: Event nb 800  6.6s  
+INFO: Event nb 900  7.4s  
+INFO: Event nb 1000  8.2s  
+INFO: Event nb 2000  16.4s  
+INFO: Event nb 3000  24.5s  
+INFO: Event nb 4000  32.7s  
+INFO: Event nb 5000  40.8s  
+INFO: Event nb 6000  49s  
+INFO: Event nb 7000  57.2s  
+INFO: Event nb 8000  1m 5s  
+INFO: Event nb 9000  1m 13s  
+INFO: Event nb 10000  1m 21s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  2m 43s  
+INFO: All event done  (nb_event: 25000)  3m 25s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0721596 pb (indicative error: 0.0290139 pb) 
 launch --rwgt_name=morphing_basis_vector_3
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
@@ -236,10 +340,40 @@ INFO: set param_card dim6 4 -4.70413 # orig: 0.0
 KEEP:set param_card dim6 5 -2.237588 # orig: 0.0
 KEEP:set param_card dim62f 19 4.219889 # orig: 0.0
 KEEP: 
-INFO: Event nb 0 current time: 17h04 
-INFO: All event done  (nb_event: 10)  0.087s  
-INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
-INFO: new cross-section is : 0.0493504 pb (indicative error: 0.0184894 pb) 
+INFO: Event nb 0 current time: 22h43 
+INFO: Event nb 10  0.083s  
+INFO: Event nb 20  0.17s  
+INFO: Event nb 30  0.25s  
+INFO: Event nb 40  0.33s  
+INFO: Event nb 50  0.41s  
+INFO: Event nb 60  0.5s  
+INFO: Event nb 70  0.58s  
+INFO: Event nb 80  0.66s  
+INFO: Event nb 90  0.74s  
+INFO: Event nb 100  0.83s  
+INFO: Event nb 200  1.7s  
+INFO: Event nb 300  2.5s  
+INFO: Event nb 400  3.4s  
+INFO: Event nb 500  4.3s  
+INFO: Event nb 600  5.1s  
+INFO: Event nb 700  6s  
+INFO: Event nb 800  6.8s  
+INFO: Event nb 900  7.6s  
+INFO: Event nb 1000  8.4s  
+INFO: Event nb 2000  16.5s  
+INFO: Event nb 3000  24.7s  
+INFO: Event nb 4000  33.1s  
+INFO: Event nb 5000  41.3s  
+INFO: Event nb 6000  49.6s  
+INFO: Event nb 7000  57.8s  
+INFO: Event nb 8000  1m 6s  
+INFO: Event nb 9000  1m 14s  
+INFO: Event nb 10000  1m 22s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  2m 44s  
+INFO: All event done  (nb_event: 25000)  3m 25s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0482936 pb (indicative error: 0.00255041 pb) 
 launch --rwgt_name=morphing_basis_vector_4
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
@@ -259,10 +393,40 @@ INFO: set param_card dim6 4 0.1140347 # orig: 0.0
 KEEP:set param_card dim6 5 4.567852 # orig: 0.0
 KEEP:set param_card dim62f 19 5.437451 # orig: 0.0
 KEEP: 
-INFO: Event nb 0 current time: 17h04 
-INFO: All event done  (nb_event: 10)  0.088s  
-INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
-INFO: new cross-section is : 0.143795 pb (indicative error: 0.0811068 pb) 
+INFO: Event nb 0 current time: 22h46 
+INFO: Event nb 10  0.086s  
+INFO: Event nb 20  0.17s  
+INFO: Event nb 30  0.25s  
+INFO: Event nb 40  0.33s  
+INFO: Event nb 50  0.42s  
+INFO: Event nb 60  0.5s  
+INFO: Event nb 70  0.58s  
+INFO: Event nb 80  0.67s  
+INFO: Event nb 90  0.75s  
+INFO: Event nb 100  0.83s  
+INFO: Event nb 200  1.7s  
+INFO: Event nb 300  2.5s  
+INFO: Event nb 400  3.4s  
+INFO: Event nb 500  4.2s  
+INFO: Event nb 600  5s  
+INFO: Event nb 700  5.9s  
+INFO: Event nb 800  6.7s  
+INFO: Event nb 900  7.5s  
+INFO: Event nb 1000  8.3s  
+INFO: Event nb 2000  16.4s  
+INFO: Event nb 3000  24.5s  
+INFO: Event nb 4000  32.6s  
+INFO: Event nb 5000  40.7s  
+INFO: Event nb 6000  48.9s  
+INFO: Event nb 7000  57s  
+INFO: Event nb 8000  1m 5s  
+INFO: Event nb 9000  1m 13s  
+INFO: Event nb 10000  1m 21s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  2m 42s  
+INFO: All event done  (nb_event: 25000)  3m 22s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.118552 pb (indicative error: 0.0104741 pb) 
 launch --rwgt_name=morphing_basis_vector_5
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
@@ -282,10 +446,40 @@ INFO: set param_card dim6 4 2.704957 # orig: 0.0
 KEEP:set param_card dim6 5 -11.77089 # orig: 0.0
 KEEP:set param_card dim62f 19 -5.938309 # orig: 0.0
 KEEP: 
-INFO: Event nb 0 current time: 17h04 
-INFO: All event done  (nb_event: 10)  0.086s  
-INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
-INFO: new cross-section is : 0.283867 pb (indicative error: 0.319759 pb) 
+INFO: Event nb 0 current time: 22h50 
+INFO: Event nb 10  0.082s  
+INFO: Event nb 20  0.16s  
+INFO: Event nb 30  0.25s  
+INFO: Event nb 40  0.33s  
+INFO: Event nb 50  0.41s  
+INFO: Event nb 60  0.5s  
+INFO: Event nb 70  0.58s  
+INFO: Event nb 80  0.67s  
+INFO: Event nb 90  0.76s  
+INFO: Event nb 100  0.84s  
+INFO: Event nb 200  1.7s  
+INFO: Event nb 300  2.5s  
+INFO: Event nb 400  3.3s  
+INFO: Event nb 500  4.1s  
+INFO: Event nb 600  4.9s  
+INFO: Event nb 700  5.7s  
+INFO: Event nb 800  6.5s  
+INFO: Event nb 900  7.3s  
+INFO: Event nb 1000  8.2s  
+INFO: Event nb 2000  16.2s  
+INFO: Event nb 3000  24.4s  
+INFO: Event nb 4000  32.5s  
+INFO: Event nb 5000  40.6s  
+INFO: Event nb 6000  48.8s  
+INFO: Event nb 7000  57s  
+INFO: Event nb 8000  1m 5s  
+INFO: Event nb 9000  1m 13s  
+INFO: Event nb 10000  1m 21s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  2m 42s  
+INFO: All event done  (nb_event: 25000)  3m 23s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.179455 pb (indicative error: 0.0484975 pb) 
 launch --rwgt_name=morphing_basis_vector_6
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
@@ -305,10 +499,40 @@ INFO: set param_card dim6 4 4.585811 # orig: 0.0
 KEEP:set param_card dim6 5 6.747472 # orig: 0.0
 KEEP:set param_card dim62f 19 -2.432281 # orig: 0.0
 KEEP: 
-INFO: Event nb 0 current time: 17h04 
-INFO: All event done  (nb_event: 10)  0.09s  
-INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
-INFO: new cross-section is : 0.0632311 pb (indicative error: 0.0392639 pb) 
+INFO: Event nb 0 current time: 22h53 
+INFO: Event nb 10  0.082s  
+INFO: Event nb 20  0.16s  
+INFO: Event nb 30  0.24s  
+INFO: Event nb 40  0.32s  
+INFO: Event nb 50  0.41s  
+INFO: Event nb 60  0.49s  
+INFO: Event nb 70  0.57s  
+INFO: Event nb 80  0.65s  
+INFO: Event nb 90  0.73s  
+INFO: Event nb 100  0.81s  
+INFO: Event nb 200  1.6s  
+INFO: Event nb 300  2.4s  
+INFO: Event nb 400  3.2s  
+INFO: Event nb 500  4s  
+INFO: Event nb 600  4.9s  
+INFO: Event nb 700  5.7s  
+INFO: Event nb 800  6.5s  
+INFO: Event nb 900  7.4s  
+INFO: Event nb 1000  8.2s  
+INFO: Event nb 2000  16.3s  
+INFO: Event nb 3000  24.6s  
+INFO: Event nb 4000  32.7s  
+INFO: Event nb 5000  40.8s  
+INFO: Event nb 6000  48.9s  
+INFO: Event nb 7000  57s  
+INFO: Event nb 8000  1m 5s  
+INFO: Event nb 9000  1m 13s  
+INFO: Event nb 10000  1m 21s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  2m 42s  
+INFO: All event done  (nb_event: 25000)  3m 22s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0491749 pb (indicative error: 0.0051503 pb) 
 launch --rwgt_name=morphing_basis_vector_7
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
@@ -328,10 +552,40 @@ INFO: set param_card dim6 4 -1.246802 # orig: 0.0
 KEEP:set param_card dim6 5 -14.80999 # orig: 0.0
 KEEP:set param_card dim62f 19 0.4606651 # orig: 0.0
 KEEP: 
-INFO: Event nb 0 current time: 17h04 
-INFO: All event done  (nb_event: 10)  0.09s  
-INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
-INFO: new cross-section is : 0.216524 pb (indicative error: 0.291677 pb) 
+INFO: Event nb 0 current time: 22h56 
+INFO: Event nb 10  0.085s  
+INFO: Event nb 20  0.17s  
+INFO: Event nb 30  0.25s  
+INFO: Event nb 40  0.33s  
+INFO: Event nb 50  0.41s  
+INFO: Event nb 60  0.49s  
+INFO: Event nb 70  0.57s  
+INFO: Event nb 80  0.66s  
+INFO: Event nb 90  0.74s  
+INFO: Event nb 100  0.82s  
+INFO: Event nb 200  1.6s  
+INFO: Event nb 300  2.5s  
+INFO: Event nb 400  3.3s  
+INFO: Event nb 500  4.1s  
+INFO: Event nb 600  4.9s  
+INFO: Event nb 700  5.7s  
+INFO: Event nb 800  6.6s  
+INFO: Event nb 900  7.4s  
+INFO: Event nb 1000  8.3s  
+INFO: Event nb 2000  16.3s  
+INFO: Event nb 3000  24.4s  
+INFO: Event nb 4000  32.5s  
+INFO: Event nb 5000  40.5s  
+INFO: Event nb 6000  48.6s  
+INFO: Event nb 7000  56.7s  
+INFO: Event nb 8000  1m 4s  
+INFO: Event nb 9000  1m 12s  
+INFO: Event nb 10000  1m 21s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  2m 41s  
+INFO: All event done  (nb_event: 25000)  3m 22s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.12221 pb (indicative error: 0.044996 pb) 
 launch --rwgt_name=morphing_basis_vector_8
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
@@ -351,10 +605,40 @@ INFO: set param_card dim6 4 -1.757994 # orig: 0.0
 KEEP:set param_card dim6 5 7.687006 # orig: 0.0
 KEEP:set param_card dim62f 19 -4.792287 # orig: 0.0
 KEEP: 
-INFO: Event nb 0 current time: 17h04 
-INFO: All event done  (nb_event: 10)  0.087s  
-INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
-INFO: new cross-section is : 0.131595 pb (indicative error: 0.116604 pb) 
+INFO: Event nb 0 current time: 23h00 
+INFO: Event nb 10  0.082s  
+INFO: Event nb 20  0.16s  
+INFO: Event nb 30  0.24s  
+INFO: Event nb 40  0.32s  
+INFO: Event nb 50  0.41s  
+INFO: Event nb 60  0.49s  
+INFO: Event nb 70  0.57s  
+INFO: Event nb 80  0.65s  
+INFO: Event nb 90  0.73s  
+INFO: Event nb 100  0.81s  
+INFO: Event nb 200  1.6s  
+INFO: Event nb 300  2.4s  
+INFO: Event nb 400  3.2s  
+INFO: Event nb 500  4s  
+INFO: Event nb 600  4.8s  
+INFO: Event nb 700  5.6s  
+INFO: Event nb 800  6.5s  
+INFO: Event nb 900  7.3s  
+INFO: Event nb 1000  8.1s  
+INFO: Event nb 2000  16.1s  
+INFO: Event nb 3000  24.4s  
+INFO: Event nb 4000  32.4s  
+INFO: Event nb 5000  40.6s  
+INFO: Event nb 6000  48.6s  
+INFO: Event nb 7000  56.7s  
+INFO: Event nb 8000  1m 4s  
+INFO: Event nb 9000  1m 12s  
+INFO: Event nb 10000  1m 20s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  2m 43s  
+INFO: All event done  (nb_event: 25000)  3m 24s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.093426 pb (indicative error: 0.0158498 pb) 
 launch --rwgt_name=morphing_basis_vector_9
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
@@ -374,21 +658,51 @@ INFO: set param_card dim6 4 3.774042 # orig: 0.0
 KEEP:set param_card dim6 5 0.6799669 # orig: 0.0
 KEEP:set param_card dim62f 19 4.975328 # orig: 0.0
 KEEP: 
-INFO: Event nb 0 current time: 17h04 
-INFO: All event done  (nb_event: 10)  0.09s  
-INFO: Event /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
-INFO: new cross-section is : 0.0280972 pb (indicative error: 0.00367253 pb) 
-INFO: Original cross-section: 0.015785 +- 3.6798e-05 pb (cross-section from sum of weights: 0.015784999999999997) 
+INFO: Event nb 0 current time: 23h03 
+INFO: Event nb 10  0.083s  
+INFO: Event nb 20  0.16s  
+INFO: Event nb 30  0.24s  
+INFO: Event nb 40  0.32s  
+INFO: Event nb 50  0.41s  
+INFO: Event nb 60  0.49s  
+INFO: Event nb 70  0.57s  
+INFO: Event nb 80  0.65s  
+INFO: Event nb 90  0.73s  
+INFO: Event nb 100  0.81s  
+INFO: Event nb 200  1.6s  
+INFO: Event nb 300  2.4s  
+INFO: Event nb 400  3.2s  
+INFO: Event nb 500  4.1s  
+INFO: Event nb 600  4.9s  
+INFO: Event nb 700  5.7s  
+INFO: Event nb 800  6.5s  
+INFO: Event nb 900  7.3s  
+INFO: Event nb 1000  8.2s  
+INFO: Event nb 2000  16.3s  
+INFO: Event nb 3000  24.5s  
+INFO: Event nb 4000  32.7s  
+INFO: Event nb 5000  40.9s  
+INFO: Event nb 6000  49.1s  
+INFO: Event nb 7000  57.3s  
+INFO: Event nb 8000  1m 5s  
+INFO: Event nb 9000  1m 13s  
+INFO: Event nb 10000  1m 21s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  2m 44s  
+INFO: All event done  (nb_event: 25000)  3m 25s  
+INFO: Event /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Events/run_01/unweighted_events.lhe have now the additional weight 
+INFO: new cross-section is : 0.0287099 pb (indicative error: 0.000547067 pb) 
+INFO: Original cross-section: 0.015848 +- 9.609e-06 pb (cross-section from sum of weights: 0.015848000000004334) 
 INFO: Computed cross-section: 
-INFO: morphing_basis_vector_1 : 0.08247970400633768 +- 0.10710320089717601 pb 
-INFO: morphing_basis_vector_2 : 0.13096365080546155 +- 0.17755893681230955 pb 
-INFO: morphing_basis_vector_3 : 0.0493504114290053 +- 0.018489415617866174 pb 
-INFO: morphing_basis_vector_4 : 0.14379466438508387 +- 0.08110682305503986 pb 
-INFO: morphing_basis_vector_5 : 0.28386682428641313 +- 0.31975948219889805 pb 
-INFO: morphing_basis_vector_6 : 0.06323109296263915 +- 0.039263935397679604 pb 
-INFO: morphing_basis_vector_7 : 0.21652394114337392 +- 0.29167734087822567 pb 
-INFO: morphing_basis_vector_8 : 0.13159453978047256 +- 0.11660440360347814 pb 
-INFO: morphing_basis_vector_9 : 0.028097168050296682 +- 0.003672527412020186 pb 
+INFO: morphing_basis_vector_1 : 0.0476865820980531 +- 0.01673977459310382 pb 
+INFO: morphing_basis_vector_2 : 0.07215961442931829 +- 0.029013878150637107 pb 
+INFO: morphing_basis_vector_3 : 0.04829364330719142 +- 0.00255041420676004 pb 
+INFO: morphing_basis_vector_4 : 0.11855198568310057 +- 0.010474124592393668 pb 
+INFO: morphing_basis_vector_5 : 0.1794545891782479 +- 0.0484975451928544 pb 
+INFO: morphing_basis_vector_6 : 0.04917487387829391 +- 0.005150301593026724 pb 
+INFO: morphing_basis_vector_7 : 0.12221029176686805 +- 0.044995972930447665 pb 
+INFO: morphing_basis_vector_8 : 0.09342602966766268 +- 0.015849813974869332 pb 
+INFO: morphing_basis_vector_9 : 0.02870989198477639 +- 0.0005470670122450749 pb 
 INFO: quit rwgt 
 decay_events -from_cards
 INFO: Running MadSpin 
@@ -418,7 +732,7 @@ INFO: detected model: heft. Loading...
 INFO: reload from .py file 
 INFO: load particles 
 INFO: load vertices 
-INFO: Restrict model heft with file ../../../../srv/localstage/condor/dir_2610342/mg5amcnlo/models/heft/restrict_default.dat . 
+INFO: Restrict model heft with file ../../../../srv/localstage/condor/dir_1916058/mg5amcnlo/models/heft/restrict_default.dat . 
 INFO: Run "set stdout_level DEBUG" before import for more information. 
 [1;34mPass the definition of 'j' and 'p' to 4 flavour scheme.[0m
 Kept definitions of multiparticles l+ / l- / vl / vl~ unchanged
@@ -429,33 +743,67 @@ set max_weight_ps_point 400  # number of PS to estimate the maximum for each eve
 decay h > b b~
 decay h > b b~
 launch
-INFO: Will use seed 445030115 
-INFO: generate 10 decay event for particle h 
-INFO: Will use seed 409228850 
+INFO: Will use seed 662678867 
+INFO: generate 25000 decay event for particle h 
+INFO: Will use seed 435813578 
 stty: 'standard input': Inappropriate ioctl for device
-  0%|          | 0/691 [00:00<?, ?it/s]100%|██████████| 691/691 [00:00<00:00, 137404.07it/s]stty: 'standard input': Inappropriate ioctl for device
+  0%|          | 0/691 [00:00<?, ?it/s]100%|██████████| 691/691 [00:00<00:00, 135243.31it/s]stty: 'standard input': Inappropriate ioctl for device
 
-  0%|          | 0/691 [00:00<?, ?it/s]100%|██████████| 691/691 [00:00<00:00, 151345.38it/s]INFO: The decayed event file has been moved to the following location:  
-INFO: /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/Events/run_01_decayed_1/unweighted_events.lhe.gz 
+  0%|          | 0/691 [00:00<?, ?it/s]100%|██████████| 691/691 [00:00<00:00, 148682.30it/s]decaying event number 100 [0.06266355514526367 s]
+decaying event number 200 [0.12400984764099121 s]
+decaying event number 300 [0.18561577796936035 s]
+decaying event number 400 [0.24721240997314453 s]
+decaying event number 500 [0.30901002883911133 s]
+decaying event number 600 [0.3703033924102783 s]
+decaying event number 700 [0.43181324005126953 s]
+decaying event number 800 [0.4933452606201172 s]
+decaying event number 900 [0.5550212860107422 s]
+decaying event number 1000 [0.6164166927337646 s]
+decaying event number 2000 [1.231565237045288 s]
+decaying event number 3000 [1.849224328994751 s]
+decaying event number 4000 [2.4646658897399902 s]
+decaying event number 5000 [3.0885732173919678 s]
+decaying event number 6000 [3.7147631645202637 s]
+decaying event number 7000 [4.332798957824707 s]
+decaying event number 8000 [4.951828956604004 s]
+decaying event number 9000 [5.567378997802734 s]
+decaying event number 10000 [6.184306621551514 s]
+decaying event number 20000 [12.390260696411133 s]
+INFO: The decayed event file has been moved to the following location:  
+INFO: /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_sm_1/Events/run_01_decayed_1/unweighted_events.lhe.gz 
 INFO: MadSpin Done 
 INFO: [92mRunning Pythia8 [arXiv:1410.3012][0m 
 Splitting .lhe event file for PY8 parallelization...
 Submitting Pythia8 jobs...
-Pythia8 shower jobs: 1 Idle, 0 Running, 0 Done [0 second]
-Pythia8 shower jobs: 0 Idle, 0 Running, 1 Done [4 seconds]
+Pythia8 shower jobs: 1 Idle, 15 Running, 0 Done [11 seconds]
+Pythia8 shower jobs: 0 Idle, 15 Running, 1 Done [4m17s]
+Pythia8 shower jobs: 0 Idle, 14 Running, 2 Done [4m19s]
+Pythia8 shower jobs: 0 Idle, 13 Running, 3 Done [4m20s]
+Pythia8 shower jobs: 0 Idle, 12 Running, 4 Done [4m20s]
+Pythia8 shower jobs: 0 Idle, 11 Running, 5 Done [4m21s]
+Pythia8 shower jobs: 0 Idle, 10 Running, 6 Done [4m21s]
+Pythia8 shower jobs: 0 Idle, 9 Running, 7 Done [4m21s]
+Pythia8 shower jobs: 0 Idle, 8 Running, 8 Done [4m21s]
+Pythia8 shower jobs: 0 Idle, 7 Running, 9 Done [4m21s]
+Pythia8 shower jobs: 0 Idle, 6 Running, 10 Done [4m21s]
+Pythia8 shower jobs: 0 Idle, 5 Running, 11 Done [4m22s]
+Pythia8 shower jobs: 0 Idle, 4 Running, 12 Done [4m22s]
+Pythia8 shower jobs: 0 Idle, 3 Running, 13 Done [4m22s]
+Pythia8 shower jobs: 0 Idle, 2 Running, 14 Done [4m22s]
+Pythia8 shower jobs: 0 Idle, 1 Running, 15 Done [4m22s]
+Pythia8 shower jobs: 0 Idle, 0 Running, 16 Done [4m22s]
 Merging results from the split PY8 runs...
-INFO: Pythia8 shower finished after 5 seconds. 
+INFO: Pythia8 shower finished after 5m25s. 
   === Results Summary for run: run_01_decayed_1 tag: tag_1 ===
 
-     Cross-section :   0.01436 +- 3.348e-05 pb
-     Nb of events :  10
+     Cross-section :   0.01442 +- 8.743e-06 pb
+     Nb of events :  25000
  
 INFO: storing files of previous run 
 INFO: Storing Pythia8 files of previous run 
 INFO: Done 
 quit
 INFO:  
-more information in /vols/cms/us322/02_event_generation_14_4b/mg_processes/signal_sm_1/index.html
 order=LO
 [1;34mCommand "order=LO" not recognized, please try again[0m
 shower=Pythia8

@@ -1,0 +1,232 @@
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.5.1                 2023-07-11         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../../../../srv/localstage/condor/dir_1947221/mg5amcnlo/input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+None does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_47/madminer/cards/mg_commands_0.dat
+The import format was not given, so we guess it as command
+launch /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_47
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.5.1                 2023-07-11         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_47/Cards/me5_configuration.txt  
+INFO: load configuration from /srv/localstage/condor/dir_1947221/mg5amcnlo/input/mg5_configuration.txt  
+INFO: load configuration from /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_47/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+generate_events run_01
+stty: 'standard input': Inappropriate ioctl for device
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [32mPythia8[0m           |
+| 2. Choose the detector simulation program    [1mdetector[0m = [01mNot Avail.[0m        |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=OFF' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+[1;34mfound line : order=LO[0m
+[1;34mThis answer is not valid for current question. Keep it for next question and use here default: 0[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param   : [32mparam_card.dat[0m                               |
+|  [31m2[0m. run     : [32mrun_card.dat[0m                                 |
+|  [31m3[0m. pythia8 : [32mpythia8_card.dat[0m                             |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, 3, pythia8, enter path]
+[1;34mfound line : order=LO[0m
+[1;34mThis answer is not valid for current question. Keep it for next question and use here default: 0[0m
+INFO: Update the dependent parameter of the param_card.dat 
+[1;34mWARNING: update the strong coupling value (alpha_s) to the value from the pdf selected: 0.119 [0m
+[1;34mWARNING: Unknow type of information in the card: dim6,dim62f,dim64f,dim64f4l,dim64f2l,loop,renor [0m
+Generating 25000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+[1;34mWARNING: information about "sminputs [1]" is missing using default value: 132.507. [0m
+[1;34mWARNING: information about "yukawa [5]" is missing using default value: 4.7. [0m
+[1;34mWARNING: information about "yukawa [15]" is missing using default value: 1.777. [0m
+compile Source Directory
+Error: no DISPLAY environment variable specified
+Using random number seed offset = 21620
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO: Compiling for process 1/2. 
+INFO:     P1_gg_bbxbbx  
+  0%|          | 0/1233 [00:00<?, ?it/s] 50%|████▉     | 613/1233 [00:00<00:00, 6098.90it/s] 99%|█████████▉| 1223/1233 [00:00<00:00, 4723.71it/s]100%|██████████| 1233/1233 [00:00<00:00, 4925.68it/s]INFO: Compiling for process 2/2. 
+INFO:     P1_qq_bbxbbx  
+
+  0%|          | 0/853 [00:00<?, ?it/s]100%|██████████| 853/853 [00:00<00:00, 26398.35it/s]INFO:     P1_gg_bbxbbx  
+INFO:     P1_qq_bbxbbx  
+INFO:  Idle: 3,  Running: 4,  Completed: 0 [ current time: 19h34 ] 
+INFO:  Idle: 2,  Running: 4,  Completed: 1 [  1m 7s  ] 
+INFO:  Idle: 1,  Running: 4,  Completed: 2 [  1m 26s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 4 [  1m 50s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 5 [  2m 3s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 6 [  2m 29s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 7 [  2m 30s  ] 
+INFO: End survey 
+refine 25000
+Creating Jobs
+INFO: Refine results to 25000 
+INFO: Generating 25000.0 unweighted events. 
+sum of cpu time of last step: 2m31s
+INFO: Effective Luminosity 67279.50856057585 pb^-1 
+INFO: need to improve 4 channels 
+- Current estimate of cross-section: 0.44590099782 +- 0.022469372214098504
+    P1_gg_bbxbbx 
+    P1_qq_bbxbbx 
+INFO:  Idle: 28,  Running: 4,  Completed: 0 [ current time: 19h36 ] 
+INFO:  Idle: 27,  Running: 4,  Completed: 1 [  3m 5s  ] 
+INFO:  Idle: 26,  Running: 4,  Completed: 2 [  4m 24s  ] 
+INFO:  Idle: 25,  Running: 4,  Completed: 3 [  4m 31s  ] 
+INFO:  Idle: 24,  Running: 4,  Completed: 4 [  4m 41s  ] 
+INFO:  Idle: 22,  Running: 4,  Completed: 6 [  5m 32s  ] 
+INFO:  Idle: 21,  Running: 4,  Completed: 7 [  9m 4s  ] 
+INFO:  Idle: 20,  Running: 4,  Completed: 8 [  10m 2s  ] 
+INFO:  Idle: 19,  Running: 4,  Completed: 9 [  12m 2s  ] 
+INFO:  Idle: 18,  Running: 4,  Completed: 10 [  12m 37s  ] 
+INFO:  Idle: 17,  Running: 4,  Completed: 11 [  14m 22s  ] 
+INFO:  Idle: 16,  Running: 4,  Completed: 12 [  15m 58s  ] 
+INFO:  Idle: 15,  Running: 4,  Completed: 13 [  17m 1s  ] 
+INFO:  Idle: 14,  Running: 4,  Completed: 14 [  17m 42s  ] 
+INFO:  Idle: 13,  Running: 4,  Completed: 15 [  17m 45s  ] 
+INFO:  Idle: 12,  Running: 4,  Completed: 16 [  18m 34s  ] 
+INFO:  Idle: 11,  Running: 4,  Completed: 17 [  18m 38s  ] 
+INFO:  Idle: 10,  Running: 4,  Completed: 18 [  20m 0s  ] 
+INFO:  Idle: 9,  Running: 4,  Completed: 19 [  20m 11s  ] 
+INFO:  Idle: 8,  Running: 4,  Completed: 20 [  23m 12s  ] 
+INFO:  Idle: 7,  Running: 4,  Completed: 21 [  24m 9s  ] 
+INFO:  Idle: 6,  Running: 4,  Completed: 22 [  24m 28s  ] 
+INFO:  Idle: 5,  Running: 4,  Completed: 23 [  24m 41s  ] 
+INFO:  Idle: 4,  Running: 4,  Completed: 24 [  26m 25s  ] 
+INFO:  Idle: 3,  Running: 4,  Completed: 25 [  27m 48s  ] 
+INFO:  Idle: 2,  Running: 4,  Completed: 26 [  28m 31s  ] 
+INFO:  Idle: 1,  Running: 4,  Completed: 27 [  28m 50s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 28 [  29m 47s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 29 [  32m 6s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 30 [  33m 37s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 31 [  35m 21s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 32 [  35m 25s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 32 [  35m 25s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 36m31s
+INFO: finish refine 
+refine 25000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   0.4565 +- 0.0008186 pb
+     Nb of events :  25000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: [92mRunning Pythia8 [arXiv:1410.3012][0m 
+Splitting .lhe event file for PY8 parallelization...
+Submitting Pythia8 jobs...
+Pythia8 shower jobs: 1 Idle, 3 Running, 0 Done [5 seconds]
+Pythia8 shower jobs: 0 Idle, 3 Running, 1 Done [2m22s]
+Pythia8 shower jobs: 0 Idle, 2 Running, 2 Done [2m23s]
+Pythia8 shower jobs: 0 Idle, 1 Running, 3 Done [2m25s]
+Pythia8 shower jobs: 0 Idle, 0 Running, 4 Done [2m25s]
+Merging results from the split PY8 runs...
+INFO: Pythia8 shower finished after 3m02s. 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   0.4565 +- 0.0008186 pb
+     Nb of events :  25000
+ 
+INFO: storing files of previous run 
+INFO: Storing Pythia8 files of previous run 
+INFO: Done 
+quit
+INFO:  
+more information in /vols/cms/us322/events_4b/02_event_generation_4b/mg_processes_2/background_47/index.html
+order=LO
+[1;34mCommand "order=LO" not recognized, please try again[0m
+shower=Pythia8
+[1;34mCommand "shower=Pythia8" not recognized, please try again[0m
+detector=OFF
+[1;34mCommand "detector=OFF" not recognized, please try again[0m
+analysis=OFF
+[1;34mCommand "analysis=OFF" not recognized, please try again[0m
+madspin=OFF
+[1;34mCommand "madspin=OFF" not recognized, please try again[0m
+reweight=OFF
+[1;34mCommand "reweight=OFF" not recognized, please try again[0m
+done
+[1;34mCommand "done" not recognized, please try again[0m
+quit
+

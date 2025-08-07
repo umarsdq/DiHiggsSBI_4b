@@ -1,0 +1,101 @@
+000 (3105403.067.000) 2025-08-06 19:20:13 Job submitted from host: <146.179.108.134:9618?addrs=146.179.108.134-9618&alias=htcmaster00.hep.ph.ic.ac.uk&noUDP&sock=schedd_935_e924>
+...
+001 (3105403.067.000) 2025-08-06 19:32:00 Job executing on host: <146.179.108.68:9618?addrs=146.179.108.68-9618+[2a0c-5bc0-88-111-a236-9fff-fe89-f35c]-9618&alias=lxb06.hep.ph.ic.ac.uk&noUDP&sock=startd_1907_9f32>
+	SlotName: slot1_12@lxb06.hep.ph.ic.ac.uk
+	CondorScratchDir = "/srv/localstage/condor/dir_1916564"
+	Cpus = 1
+	Disk = 2049024
+	GPUs = 0
+	Memory = 4096
+...
+006 (3105403.067.000) 2025-08-06 19:32:14 Image size of job updated: 900
+	1  -  MemoryUsage of job (MB)
+	900  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:34:15 Image size of job updated: 102076
+	100  -  MemoryUsage of job (MB)
+	102076  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:36:15 Image size of job updated: 573640
+	561  -  MemoryUsage of job (MB)
+	573640  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:38:15 Image size of job updated: 573832
+	561  -  MemoryUsage of job (MB)
+	573640  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:40:15 Image size of job updated: 1188872
+	1162  -  MemoryUsage of job (MB)
+	1188872  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:42:15 Image size of job updated: 1189724
+	1162  -  MemoryUsage of job (MB)
+	1189724  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:44:16 Image size of job updated: 1190116
+	1163  -  MemoryUsage of job (MB)
+	1190116  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:46:17 Image size of job updated: 1190516
+	1163  -  MemoryUsage of job (MB)
+	1190516  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:48:18 Image size of job updated: 1190628
+	1163  -  MemoryUsage of job (MB)
+	1190516  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:50:19 Image size of job updated: 1190860
+	1163  -  MemoryUsage of job (MB)
+	1190860  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:52:20 Image size of job updated: 1191812
+	1164  -  MemoryUsage of job (MB)
+	1191812  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:54:21 Image size of job updated: 1192284
+	1165  -  MemoryUsage of job (MB)
+	1192284  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:56:22 Image size of job updated: 1192596
+	1165  -  MemoryUsage of job (MB)
+	1192500  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 19:58:23 Image size of job updated: 1193120
+	1165  -  MemoryUsage of job (MB)
+	1192500  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 20:02:25 Image size of job updated: 1193120
+	1166  -  MemoryUsage of job (MB)
+	1193060  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 20:04:26 Image size of job updated: 1193624
+	1166  -  MemoryUsage of job (MB)
+	1193624  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 20:06:26 Image size of job updated: 1194544
+	1167  -  MemoryUsage of job (MB)
+	1194544  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 20:08:26 Image size of job updated: 1194652
+	1167  -  MemoryUsage of job (MB)
+	1194636  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 20:10:26 Image size of job updated: 1195004
+	1167  -  MemoryUsage of job (MB)
+	1194636  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 20:18:29 Image size of job updated: 1206364
+	1179  -  MemoryUsage of job (MB)
+	1206364  -  ResidentSetSize of job (KB)
+...
+006 (3105403.067.000) 2025-08-06 20:20:30 Image size of job updated: 1206520
+	1179  -  MemoryUsage of job (MB)
+	1206364  -  ResidentSetSize of job (KB)
+...
+012 (3105403.067.000) 2025-08-06 22:32:05 Job was held.
+	Job held by SYSTEM_PERIODIC_HOLD due to wall time exceeded.
+	Code 26 Subcode 0
+...
+009 (3105403.067.000) 2025-08-07 13:09:47 Job was aborted.
+	via condor_rm (by user us322)
+...

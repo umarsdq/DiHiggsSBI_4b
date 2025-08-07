@@ -1,0 +1,10 @@
+17:40 madminer.utils.inter INFO    HDF5 file does not contain nuisance parameters information
+17:40 madminer.utils.inter INFO    HDF5 file does not contain finite difference information
+17:40 madminer.utils.inter INFO    HDF5 file does not contain observables information
+17:40 madminer.utils.inter INFO    HDF5 file does not contain sample summary information
+17:40 madminer.utils.inter INFO    HDF5 file does not contain sample information
+17:40 madminer.utils.inter INFO    HDF5 file does not contain systematic information
+17:40 madminer.delphes.del DEBUG   Adding event sample /vols/cms/us322/events_4b/02b_final_events_4b/background/batch_0//run_01/tag_1_pythia8_events.hepmc.gz
+17:40 madminer.delphes.del DEBUG   Adding event sample /vols/cms/us322/events_4b/02b_final_events_4b/background/batch_0//run_02/tag_1_pythia8_events.hepmc.gz
+17:40 madminer.delphes.del INFO    Running Delphes on HepMC sample at /vols/cms/us322/events_4b/02b_final_events_4b/background/batch_0//run_01/tag_1_pythia8_events.hepmc.gz
+17:40 madminer.utils.inter DEBUG   Unzipping /vols/cms/us322/events_4b/02b_final_events_4b/background/batch_0//run_01/tag_1_pythia8_events.hepmc.gz

@@ -1,0 +1,98 @@
+000 (3105403.036.000) 2025-08-06 19:20:13 Job submitted from host: <146.179.108.134:9618?addrs=146.179.108.134-9618&alias=htcmaster00.hep.ph.ic.ac.uk&noUDP&sock=schedd_935_e924>
+...
+001 (3105403.036.000) 2025-08-06 19:31:01 Job executing on host: <146.179.108.71:9618?addrs=146.179.108.71-9618+[2a0c-5bc0-88-111-a236-9fff-fe8b-9f9c]-9618&alias=lxb09.hep.ph.ic.ac.uk&noUDP&sock=startd_1889_467d>
+	SlotName: slot1_4@lxb09.hep.ph.ic.ac.uk
+	CondorScratchDir = "/srv/localstage/condor/dir_3136582"
+	Cpus = 1
+	Disk = 2049024
+	GPUs = 0
+	Memory = 4096
+...
+006 (3105403.036.000) 2025-08-06 19:31:14 Image size of job updated: 892
+	1  -  MemoryUsage of job (MB)
+	892  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:33:14 Image size of job updated: 572936
+	560  -  MemoryUsage of job (MB)
+	572936  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:35:15 Image size of job updated: 573488
+	560  -  MemoryUsage of job (MB)
+	572936  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:37:16 Image size of job updated: 1178816
+	1152  -  MemoryUsage of job (MB)
+	1178816  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:39:17 Image size of job updated: 1179520
+	1152  -  MemoryUsage of job (MB)
+	1179520  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:41:18 Image size of job updated: 1180104
+	1153  -  MemoryUsage of job (MB)
+	1180104  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:43:18 Image size of job updated: 1180556
+	1153  -  MemoryUsage of job (MB)
+	1180220  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:45:18 Image size of job updated: 1180556
+	1153  -  MemoryUsage of job (MB)
+	1180284  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:47:18 Image size of job updated: 1180824
+	1154  -  MemoryUsage of job (MB)
+	1180824  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:49:18 Image size of job updated: 1182216
+	1155  -  MemoryUsage of job (MB)
+	1182216  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:51:18 Image size of job updated: 1184728
+	1157  -  MemoryUsage of job (MB)
+	1184728  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:53:18 Image size of job updated: 1185076
+	1158  -  MemoryUsage of job (MB)
+	1185076  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:55:19 Image size of job updated: 1186612
+	1158  -  MemoryUsage of job (MB)
+	1185776  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:57:20 Image size of job updated: 1186612
+	1159  -  MemoryUsage of job (MB)
+	1186532  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 19:59:21 Image size of job updated: 1187316
+	1160  -  MemoryUsage of job (MB)
+	1187316  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 20:01:22 Image size of job updated: 1188608
+	1161  -  MemoryUsage of job (MB)
+	1188608  -  ResidentSetSize of job (KB)
+...
+006 (3105403.036.000) 2025-08-06 20:03:22 Image size of job updated: 1192932
+	1165  -  MemoryUsage of job (MB)
+	1192932  -  ResidentSetSize of job (KB)
+...
+005 (3105403.036.000) 2025-08-06 20:34:04 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:59:27, Sys 0 00:00:31  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:59:27, Sys 0 00:00:31  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.96        1         1 
+	   Disk (KB)            : 275000     2048000   2049024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :   1165        4000      4096 
+	   TimeExecute (s)      :   3783                       
+	   TimeSlotBusy (s)     :   3783                       
+
+	Job terminated of its own accord at 2025-08-06T19:34:04Z with exit-code 0.
+...

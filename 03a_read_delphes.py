@@ -237,37 +237,37 @@ def add_observables(delphes):
 
 def add_cuts_and_efficiencies(delphes, region=None):
 
-
-    # pt cuts
-    delphes.add_cut('a0_pt>30')
-    delphes.add_cut('a1_pt>30')
-    delphes.add_cut('b0_pt>30')
-    delphes.add_cut('b1_pt>30')
+    # # pt cuts
+    # delphes.add_cut('a0_pt>30')
+    # delphes.add_cut('a1_pt>30')
+    # delphes.add_cut('b0_pt>30')
+    # delphes.add_cut('b1_pt>30')
     
-    # eta cuts
-    delphes.add_cut('abs(a0_eta)<2.4')
-    delphes.add_cut('abs(a1_eta)<2.4')
-    delphes.add_cut('abs(b0_eta)<2.4')
-    delphes.add_cut('abs(b1_eta)<2.4')
+    # # eta cuts
+    # delphes.add_cut('abs(a0_eta)<2.4')
+    # delphes.add_cut('abs(a1_eta)<2.4')
+    # delphes.add_cut('abs(b0_eta)<2.4')
+    # delphes.add_cut('abs(b1_eta)<2.4')
 
-    # well-separated leptons, jets
-    delphes.add_cut('bb_deltaR>0.4')
-    delphes.add_cut('aa_deltaR>0.4')
+    # # well-separated leptons, jets
+    # delphes.add_cut('bb_deltaR>0.4')
+    # delphes.add_cut('aa_deltaR>0.4')
                                    
-    # changed
-    delphes.add_cut('b0a0_deltaR>1')
-    delphes.add_cut('b0a1_deltaR>1')
-    delphes.add_cut('b1a0_deltaR>1')
-    delphes.add_cut('b1a1_deltaR>1')
-    # Higgs mass window 
+    # # changed
+    # delphes.add_cut('b0a0_deltaR>1')
+    # delphes.add_cut('b0a1_deltaR>1')
+    # delphes.add_cut('b1a0_deltaR>1')
+    # delphes.add_cut('b1a1_deltaR>1')
+    # # Higgs mass window 
 
-    delphes.add_cut('abs(m_bb-125)<25')
-    delphes.add_cut('abs(m_aa-125)<3') 
+    # delphes.add_cut('abs(m_bb-125)<25')
+    # delphes.add_cut('abs(m_aa-125)<3') 
 
-    # misc
-    delphes.add_cut('num_bjets==2') 
-    delphes.add_cut('aa_deltaR<2')
+    # # misc
+    # delphes.add_cut('num_bjets==2') 
+    # delphes.add_cut('aa_deltaR<2')
                                    
+    pass
 
 add_observables(delphes)
 add_cuts_and_efficiencies(delphes)
@@ -277,10 +277,7 @@ delphes.analyse_delphes_samples()
 
 # 5. Save results into new .h5 file
 
-delphes.save("./test/test.h5")
-
-
-# if args.process_code != "signal_supp":
-#     delphes.save("{delphes_output_data}_{process_code}_batch_{batch_index}.h5".format(delphes_output_data=workflow["delphes"]["output_file"], process_code=args.process_code, batch_index=args.batch_index))
-# else: 
-#     delphes.save("{delphes_output_data}_{process_code}_{supp_id}_batch_{batch_index}.h5".format(delphes_output_data=workflow["delphes"]["output_file"], process_code=args.process_code, batch_index=args.batch_index, supp_id = args.supp_id))
+if args.process_code != "signal_supp":
+    delphes.save("{delphes_output_data}_{process_code}_batch_{batch_index}.h5".format(delphes_output_data=workflow["delphes"]["output_file"], process_code=args.process_code, batch_index=args.batch_index))
+else: 
+    delphes.save("{delphes_output_data}_{process_code}_{supp_id}_batch_{batch_index}.h5".format(delphes_output_data=workflow["delphes"]["output_file"], process_code=args.process_code, batch_index=args.batch_index, supp_id = args.supp_id))

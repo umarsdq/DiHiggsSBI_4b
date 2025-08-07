@@ -1,0 +1,62 @@
+000 (3105405.108.000) 2025-08-06 19:20:59 Job submitted from host: <146.179.108.134:9618?addrs=146.179.108.134-9618&alias=htcmaster00.hep.ph.ic.ac.uk&noUDP&sock=schedd_935_e924>
+...
+001 (3105405.108.000) 2025-08-06 21:12:21 Job executing on host: <146.179.108.60:9618?addrs=146.179.108.60-9618+[2a0c-5bc0-88-111-92e2-baff-fea6-6928]-9618&alias=lxa08.hep.ph.ic.ac.uk&noUDP&sock=startd_1766_e857>
+	SlotName: slot1_1@lxa08.hep.ph.ic.ac.uk
+	CondorScratchDir = "/srv/localstage/condor/dir_1963406"
+	Cpus = 1
+	Disk = 2049024
+	GPUs = 0
+	Memory = 4000
+...
+006 (3105405.108.000) 2025-08-06 21:12:35 Image size of job updated: 932
+	1  -  MemoryUsage of job (MB)
+	932  -  ResidentSetSize of job (KB)
+...
+006 (3105405.108.000) 2025-08-06 21:14:36 Image size of job updated: 378920
+	348  -  MemoryUsage of job (MB)
+	355572  -  ResidentSetSize of job (KB)
+...
+006 (3105405.108.000) 2025-08-06 21:16:36 Image size of job updated: 1060704
+	1036  -  MemoryUsage of job (MB)
+	1060704  -  ResidentSetSize of job (KB)
+...
+006 (3105405.108.000) 2025-08-06 21:18:36 Image size of job updated: 1114816
+	1065  -  MemoryUsage of job (MB)
+	1090412  -  ResidentSetSize of job (KB)
+...
+006 (3105405.108.000) 2025-08-06 21:20:36 Image size of job updated: 1127824
+	1068  -  MemoryUsage of job (MB)
+	1092864  -  ResidentSetSize of job (KB)
+...
+006 (3105405.108.000) 2025-08-06 21:24:37 Image size of job updated: 1136448
+	1110  -  MemoryUsage of job (MB)
+	1136448  -  ResidentSetSize of job (KB)
+...
+006 (3105405.108.000) 2025-08-06 21:26:38 Image size of job updated: 1144504
+	1110  -  MemoryUsage of job (MB)
+	1136448  -  ResidentSetSize of job (KB)
+...
+006 (3105405.108.000) 2025-08-06 21:32:41 Image size of job updated: 1172436
+	1115  -  MemoryUsage of job (MB)
+	1141196  -  ResidentSetSize of job (KB)
+...
+005 (3105405.108.000) 2025-08-06 22:31:36 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:16:02, Sys 0 00:01:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:16:02, Sys 0 00:01:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            : 275000     2048000   2049024 
+	   GPUs                 :                            0 
+	   Memory (MB)          :   1115        4000      4000 
+	   TimeExecute (s)      :   4755                       
+	   TimeSlotBusy (s)     :   4755                       
+
+	Job terminated of its own accord at 2025-08-06T21:31:36Z with exit-code 0.
+...

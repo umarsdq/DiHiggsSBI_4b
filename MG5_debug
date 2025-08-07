@@ -43,37 +43,33 @@ define vl~ = ve~ vm~ vt~
 define p = 21 2 4 1 3 -2 -4 -1 -3 5 -5 # pass to 5 flavors
 define j = p
 set acknowledged_v3.1_syntax True --global
+generate p p > H H   QED=2 QCD=2 NP=2 [QCD]
+output /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_supp_2/morphing_basis_vector_2
 Traceback (most recent call last):
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/extended_cmd.py", line 1543, in onecmd
+  File "/srv/localstage/condor/dir_2154242/mg5amcnlo/madgraph/interface/extended_cmd.py", line 1543, in onecmd
     return self.onecmd_orig(line, **opt)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/extended_cmd.py", line 1492, in onecmd_orig
+  File "/srv/localstage/condor/dir_2154242/mg5amcnlo/madgraph/interface/extended_cmd.py", line 1492, in onecmd_orig
     return func(arg, **opt)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/master_interface.py", line 281, in do_import
+  File "/srv/localstage/condor/dir_2154242/mg5amcnlo/madgraph/interface/master_interface.py", line 281, in do_import
     self.cmd.do_import(self, *args, **opts)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/madgraph_interface.py", line 5693, in do_import
+  File "/srv/localstage/condor/dir_2154242/mg5amcnlo/madgraph/interface/madgraph_interface.py", line 5693, in do_import
     self.import_command_file(args[1])
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/extended_cmd.py", line 1691, in import_command_file
+  File "/srv/localstage/condor/dir_2154242/mg5amcnlo/madgraph/interface/extended_cmd.py", line 1691, in import_command_file
     self.exec_cmd(line, precmd=True)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/extended_cmd.py", line 1574, in exec_cmd
-    stop = current_interface.postcmd(stop, line)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/madgraph_interface.py", line 260, in postcmd
-    stop = super(CmdExtended, self).postcmd(stop, line)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/extended_cmd.py", line 1036, in postcmd
-    stop = getattr(self, 'post_%s' % cmd)(stop, subline)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/madgraph_interface.py", line 8071, in post_set
-    self.exec_cmd('save options %s' % args[0] , log=False)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/extended_cmd.py", line 1572, in exec_cmd
+  File "/srv/localstage/condor/dir_2154242/mg5amcnlo/madgraph/interface/extended_cmd.py", line 1572, in exec_cmd
     stop = Cmd.onecmd_orig(current_interface, line, **opt)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/extended_cmd.py", line 1492, in onecmd_orig
+  File "/srv/localstage/condor/dir_2154242/mg5amcnlo/madgraph/interface/extended_cmd.py", line 1492, in onecmd_orig
     return func(arg, **opt)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/master_interface.py", line 526, in do_save
-    return self.cmd.do_save(self, *args, **opts)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/madgraph_interface.py", line 7689, in do_save
-    self.write_configuration(filepath, basefile, basedir, to_define)
-  File "/vols/cms/us322/nsbi_for_dihiggs/madgraph-stable/MG5_aMC_v3_5_1/madgraph/interface/extended_cmd.py", line 2001, in write_configuration
-    for line in open(basefile):
-OSError: [Errno 1630] Unknown error 1630
-Related File: None
+  File "/srv/localstage/condor/dir_2154242/mg5amcnlo/madgraph/interface/master_interface.py", line 299, in do_output
+    self.cmd.do_output(self, line, *args, **opts)
+  File "/srv/localstage/condor/dir_2154242/mg5amcnlo/madgraph/interface/madgraph_interface.py", line 8212, in do_output
+    shutil.rmtree(self._export_dir)
+  File "/home/hep/us322/miniforge3/envs/madminer_env/lib/python3.8/shutil.py", line 722, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/home/hep/us322/miniforge3/envs/madminer_env/lib/python3.8/shutil.py", line 720, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_supp_2/morphing_basis_vector_2'
+Related File: /vols/cms/us322/events_4b/02_event_generation_4b_SPARE/mg_processes/signal_supp_2/morphing_basis_vector_2
                           MadGraph5_aMC@NLO Options    
                           ----------------    
                 auto_update 	:	7
@@ -133,12 +129,12 @@ Related File: None
                  lhapdf_py3 	:	None
           madanalysis5_path 	:	None (user set)
            madanalysis_path 	:	./MadAnalysis
-  mg5amc_py8_interface_path 	:	None (user set)
+  mg5amc_py8_interface_path 	:	./HEPTools/MG5aMC_PY8_interface
                       ninja 	:	./HEPTools/lib
         output_dependencies 	:	external
                    pineappl 	:	pineappl
             pythia-pgs_path 	:	./pythia-pgs
-               pythia8_path 	:	None (user set)
+               pythia8_path 	:	./HEPTools/pythia8
                  rivet_path 	:	./HEPTools/rivet
                     samurai 	:	None
                syscalc_path 	:	./SysCalc
