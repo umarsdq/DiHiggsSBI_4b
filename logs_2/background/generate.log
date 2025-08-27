@@ -80,7 +80,7 @@ INFO: Process u~ u > b b~ b b~ added to mirror process u u~ > b b~ b b~
 INFO: Process c~ c > b b~ b b~ added to mirror process c c~ > b b~ b b~ 
 INFO: Process d~ d > b b~ b b~ added to mirror process d d~ > b b~ b b~ 
 INFO: Process s~ s > b b~ b b~ added to mirror process s s~ > b b~ b b~ 
-5 processes with 128 diagrams generated in 0.469 s
+5 processes with 128 diagrams generated in 0.983 s
 Total: 5 processes with 128 diagrams
 output /vols/cms/us322/testing_delphes/mg_processes_2/background
 INFO: directory /vols/cms/us322/testing_delphes/mg_processes_2/background already exists.
@@ -104,10 +104,10 @@ INFO: Finding symmetric diagrams for subprocess group gg_bbxbbx
 INFO: Creating files in directory P1_qq_bbxbbx 
 INFO: Generating Feynman diagrams for Process: u u~ > b b~ b b~ WEIGHTED<=4 @1 
 INFO: Finding symmetric diagrams for subprocess group qq_bbxbbx 
-Generated helas calls for 2 subprocesses (86 diagrams) in 0.168 s
-Wrote files for 152 helas calls in 0.306 s
+Generated helas calls for 2 subprocesses (86 diagrams) in 0.325 s
+Wrote files for 152 helas calls in 1.219 s
 ALOHA: aloha starts to compute helicity amplitudes
-ALOHA: aloha creates 5 routines in  5.947 s
+ALOHA: aloha creates 5 routines in  10.486 s
 save configuration file to /vols/cms/us322/testing_delphes/mg_processes_2/background/Cards/me5_configuration.txt
 INFO: Use Fortran compiler gfortran 
 INFO: Use c++ compiler g++ 

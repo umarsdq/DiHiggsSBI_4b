@@ -110,7 +110,7 @@
 #*********************************************************************
   25.0    = ptj              ! minimum pt for the jets
   25.0    = ptb              ! minimum pt for the b
-  0.0    = pta              ! minimum pt for the photons
+  28.0    = pta              ! minimum pt for the photons
    0.0    = ptl              ! minimum pt for the charged leptons
    0.0    = misset           ! minimum missing Et (sum of neutrino's momenta)
   -1.0    = ptjmax           ! maximum pt for the jets
@@ -140,7 +140,7 @@
 #*********************************************************************
    2.8    = etaj             ! max rap for the jets
    2.8    = etab             ! max rap for the b
-   -1.0    = etaa             ! max rap for the photons
+   2.7    = etaa             ! max rap for the photons
    3.0    = etal             ! max rap for the charged leptons
    0.0    = etajmin          ! min rap for the jets
    0.0    = etabmin          ! min rap for the b
@@ -155,17 +155,17 @@
    0.35    = drjj             ! min distance between jets
    0.35    = drbb             ! min distance between b's
    0.35    = drll             ! min distance between leptons
-   0.0    = draa             ! min distance between gammas
+   0.35    = draa             ! min distance between gammas
    0.35    = drbj             ! min distance between b and jet
-   0.0    = draj             ! min distance between gamma and jet
+   0.35    = draj             ! min distance between gamma and jet
    0.35    = drjl             ! min distance between jet and lepton
-   0.0    = drab             ! min distance between gamma and b
+   0.95    = drab             ! min distance between gamma and b
    0.35    = drbl             ! min distance between b and lepton
-   0.0    = dral             ! min distance between gamma and lepton
+   0.35    = dral             ! min distance between gamma and lepton
   -1.0    = drjjmax          ! max distance between jets
   -1.0    = drbbmax          ! max distance between b's
   -1.0    = drllmax          ! max distance between leptons
-  -1.0    = draamax          ! max distance between gammas
+   2.05    = draamax          ! max distance between gammas
   -1.0    = drbjmax          ! max distance between b and jet
   -1.0    = drajmax          ! max distance between gamma and jet
   -1.0    = drjlmax          ! max distance between jet and lepton
@@ -179,12 +179,12 @@
 #          different lepton masses for each flavor!                  *
 #*********************************************************************
     0.0   = mmjj             ! min invariant mass of a jet pair
-    0.0   = mmbb             ! min invariant mass of a b pair
-    0.0   = mmaa             ! min invariant mass of gamma gamma pair
+    85.0   = mmbb             ! min invariant mass of a b pair
+    120.0   = mmaa             ! min invariant mass of gamma gamma pair
     0.0   = mmll             ! min invariant mass of l+l- (same flavour) lepton pair
    -1.0   = mmjjmax          ! max invariant mass of a jet pair
-   265.0   = mmbbmax          ! max invariant mass of a b pair
-   -1.0   = mmaamax          ! max invariant mass of gamma gamma pair
+   165.0   = mmbbmax          ! max invariant mass of a b pair
+   130.0   = mmaamax          ! max invariant mass of gamma gamma pair
    -1.0   = mmllmax          ! max invariant mass of l+l- (same flavour) lepton pair
      {}   = mxx_min_pdg      ! min invariant mass of a pair of particles X/X~ (e.g. {6:250})
   {'default': False} = mxx_only_part_antipart ! if True the invariant mass is applied only
