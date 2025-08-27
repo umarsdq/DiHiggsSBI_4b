@@ -12,7 +12,6 @@
 #*                                                          *
 #************************************************************
 
-#import model heft /vols/cms/us322/mg5amcnlo/models/heft/restrict_default.dat --bypass_check # gives error?
 import model heft --bypass_check
 
 set spinmode None          # Use one of the madspin special mode
