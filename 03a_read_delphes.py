@@ -194,8 +194,8 @@ def add_cuts_and_efficiencies(delphes, region=None):
     delphes.add_cut('bb2_deltaR>0.4')
     
     # Higgs mass windows
-    # delphes.add_cut('abs(m_bb1-125)<25')
-    # delphes.add_cut('abs(m_bb2-125)<25')
+    delphes.add_cut('abs(m_bb1-125)<25')
+    delphes.add_cut('abs(m_bb2-125)<25')
 
 add_observables(delphes)
 add_cuts_and_efficiencies(delphes)

@@ -243,8 +243,8 @@ def check_expected_structure_for_delphes(workflow):
 
 def main():
     parser = argparse.ArgumentParser(description="Check event generation files")
-    parser.add_argument("--base-dir", default="../02_event_generation_14_new", 
-                       help="Base directory to check (default: 02_event_generation_14_new)")
+    parser.add_argument("--base-dir", default="../events_4b/02_event_generation_4b", 
+                       help="Base directory to check (default: ../events_4b/02_event_generation_4b)")
     parser.add_argument("--workflow", default="workflow.yaml",
                        help="Workflow configuration file (default: workflow.yaml)")
     args = parser.parse_args()
