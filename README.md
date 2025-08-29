@@ -40,7 +40,7 @@ The directories must then be correctly configured.
 The file `workflow.yaml` is used for I/O management, so such folders don't have to be defined in every script. You must change the contents to your working directory. It is recommended to generate events within a temporary large disk space.
 
 ### Event generation
-Most of the event generation is done with [MadMiner](https://github.com/madminer-tool/madminer)
+Most of the instructions below are provided by the [authors](https://github.com/rmastand/nsbi_for_dihiggs)
 
 1. `01_setup_morphing_basis.ipynb`: specify the SMEFT operators (in the SMEFT@NLO basis) and define a set of "benchmark points". For every event generated in MadGraph, weights corresponding to each benchmark will be computed. 
 
@@ -69,12 +69,10 @@ Most of the event generation is done with [MadMiner](https://github.com/madminer
 
    As described in the paper, there are 3 classifiers that need to be trained: (1) likelihood ratio of BSM signal to SM signal, (2) likelihood ratio of BSM signal to background, (3) likelihood ratio of background to SM signal. 
 
-   Trainable kinematic features are:  $m_{hh}$, $p_{T_{bb}}$, $p_{T_{aa}}$, $\Delta R_{aa}$, $\Delta R_{bb}$, $p_{T_{a0}}$, $p_{T_{a1}}$, $p_{T_{b0}}$, $p_{T_{b1}}$. Train on the first $i$ features with the flag `-f`.
-
    As an example, you could train classifier 1 on a set of data that only varies over the first Wilson coefficient, using 5 kinematic features, with `python 05_train_network.py -p c0 -rid test_run -f 5 -c1`.
 
 6. `06a_evaluate_test_statistic.ipynb` and `06b_evaluate_coverage.ipynb`: calculate likelihood ratios on previously generated test sets (or multiple likelihood ratios over different test set instatiations). It is possible to ensemble over several networks.
 
-7. `07_nice_plots.ipynb`: nicer plot formatting.
+7. `07_nice_plots.ipynb`: Plot log-likelihood ratios and coverage tests for varying wilson coefficients.
 
-Finally, `visualize_features.ipynb` may be helpful to quickly visualize how kinematic features change as a function of Wilson coefficients.
+Finally, `visualize_features.ipynb` is helpful to quickly visualize how kinematic features change as a function of Wilson coefficients.
